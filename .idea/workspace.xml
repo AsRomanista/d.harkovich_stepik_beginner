@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7625a6a-5996-4e79-9b82-dd8816d7c82c" name="Changes" comment="new project for stepik_beginner">
+    <list default="true" id="f7625a6a-5996-4e79-9b82-dd8816d7c82c" name="Changes" comment="rename and add new file for topic #8 for stepik_beginner">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topics_1_7.py" beforeDir="false" afterPath="$PROJECT_DIR$/1_7_topics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1_7_topics.py" beforeDir="false" afterPath="$PROJECT_DIR$/part_1-7/tasks_1-7.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8_final_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/part_8/task_8.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,34 +24,40 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "AsRomanista"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AsRomanista&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/AsRomanista/d.harkovich_stepik_beginner.git",
-    "accountId": "399f146c-4f6f-401f-8a0d-182635b4a4ee"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AsRomanista/d.harkovich_stepik_beginner.git&quot;,
+    &quot;accountId&quot;: &quot;399f146c-4f6f-401f-8a0d-182635b4a4ee&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2lVb8i4w6bMpbKbmvC4aKdCDdNn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dmitry\PycharmProjects\d.harkovich_stepik_beginner\part_8" />
+      <recent name="C:\Users\Dmitry\PycharmProjects\d.harkovich_stepik_beginner\part_1-7" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -86,7 +93,23 @@
       <option name="project" value="LOCAL" />
       <updated>1725268912345</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="rename and add new file for topic #8 for stepik_beginner">
+      <option name="closed" value="true" />
+      <created>1725269282431</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725269282431</updated>
+    </task>
+    <task id="LOCAL-00004" summary="rename and add new file for topic #8 for stepik_beginner">
+      <option name="closed" value="true" />
+      <created>1725269290612</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1725269290612</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +137,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new project for stepik_beginner" />
-    <option name="LAST_COMMIT_MESSAGE" value="new project for stepik_beginner" />
+    <MESSAGE value="rename and add new file for topic #8 for stepik_beginner" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename and add new file for topic #8 for stepik_beginner" />
   </component>
 </project>
