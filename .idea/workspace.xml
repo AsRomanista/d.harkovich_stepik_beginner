@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7625a6a-5996-4e79-9b82-dd8816d7c82c" name="Changes" comment="rename and add new file for topic #8 for stepik_beginner">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1_7_topics.py" beforeDir="false" afterPath="$PROJECT_DIR$/part_1-7/tasks_1-7.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8_final_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/part_8/task_8.py" afterDir="false" />
-    </list>
+    <list default="true" id="f7625a6a-5996-4e79-9b82-dd8816d7c82c" name="Changes" comment="new structure" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725269290612</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="new structure">
+      <option name="closed" value="true" />
+      <created>1725436464406</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725436464406</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,6 +142,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new project for stepik_beginner" />
     <MESSAGE value="rename and add new file for topic #8 for stepik_beginner" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename and add new file for topic #8 for stepik_beginner" />
+    <MESSAGE value="new structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="new structure" />
   </component>
 </project>
