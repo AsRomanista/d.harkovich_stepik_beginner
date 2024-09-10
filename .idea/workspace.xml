@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7625a6a-5996-4e79-9b82-dd8816d7c82c" name="Changes" comment="new structure">
-      <change afterPath="$PROJECT_DIR$/part_8/task_8.1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/d.harkovich_stepik_beginner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/d.harkovich_stepik_beginner.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f7625a6a-5996-4e79-9b82-dd8816d7c82c" name="Changes" comment="complete task_7.9.7&#10;passed exam 8.1 and 8.2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_8/task_8.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +54,18 @@
     "Python.task_8.6.executor": "Run",
     "Python.task_8.7.executor": "Run",
     "Python.task_8.executor": "Run",
+    "Python.task_9.1.10.executor": "Run",
+    "Python.task_9.1.11.executor": "Run",
+    "Python.task_9.1.12.executor": "Run",
+    "Python.task_9.1.13.executor": "Run",
+    "Python.task_9.1.14.executor": "Run",
+    "Python.task_9.1.15.executor": "Run",
+    "Python.task_9.1.5.executor": "Run",
+    "Python.task_9.1.6.executor": "Run",
+    "Python.task_9.1.7.executor": "Run",
+    "Python.task_9.1.8.executor": "Run",
+    "Python.task_9.1.9.executor": "Run",
+    "Python.task_9.1.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "settings.editor.selected.configurable": "vcs.Git"
@@ -65,6 +73,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dmitry\PycharmProjects\d.harkovich_stepik_beginner\part_9\part_9.1" />
+      <recent name="C:\Users\Dmitry\PycharmProjects\d.harkovich_stepik_beginner" />
       <recent name="C:\Users\Dmitry\PycharmProjects\d.harkovich_stepik_beginner\part_8" />
       <recent name="C:\Users\Dmitry\PycharmProjects\d.harkovich_stepik_beginner\part_1-7" />
     </key>
@@ -128,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725436464406</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="complete task_7.9.7&#10;passed exam 8.1 and 8.2">
+      <option name="closed" value="true" />
+      <created>1725915937497</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1725915937497</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -158,6 +176,7 @@
     <MESSAGE value="new project for stepik_beginner" />
     <MESSAGE value="rename and add new file for topic #8 for stepik_beginner" />
     <MESSAGE value="new structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="new structure" />
+    <MESSAGE value="complete task_7.9.7&#10;passed exam 8.1 and 8.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete task_7.9.7&#10;passed exam 8.1 and 8.2" />
   </component>
 </project>
