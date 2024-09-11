@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7625a6a-5996-4e79-9b82-dd8816d7c82c" name="Changes" comment="complete task_7.9.7&#10;passed exam 8.1 and 8.2">
+    <list default="true" id="f7625a6a-5996-4e79-9b82-dd8816d7c82c" name="Changes" comment="complete topic 9.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,6 +66,14 @@
     "Python.task_9.1.8.executor": "Run",
     "Python.task_9.1.9.executor": "Run",
     "Python.task_9.1.executor": "Run",
+    "Python.task_9.2.10.executor": "Run",
+    "Python.task_9.2.11.executor": "Run",
+    "Python.task_9.2.12.executor": "Run",
+    "Python.task_9.2.13.executor": "Run",
+    "Python.task_9.2.14.executor": "Run",
+    "Python.task_9.2.7.executor": "Run",
+    "Python.task_9.2.8.executor": "Run",
+    "Python.task_9.2.9.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "settings.editor.selected.configurable": "vcs.Git"
@@ -146,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725915937497</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="complete topic 9.1">
+      <option name="closed" value="true" />
+      <created>1725989933826</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1725989933826</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,6 +193,7 @@
     <MESSAGE value="rename and add new file for topic #8 for stepik_beginner" />
     <MESSAGE value="new structure" />
     <MESSAGE value="complete task_7.9.7&#10;passed exam 8.1 and 8.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete task_7.9.7&#10;passed exam 8.1 and 8.2" />
+    <MESSAGE value="complete topic 9.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete topic 9.1" />
   </component>
 </project>
