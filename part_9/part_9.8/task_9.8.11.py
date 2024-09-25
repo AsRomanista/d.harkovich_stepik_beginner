@@ -10,15 +10,15 @@ all_string = []
 
 while True:
     string = input()
-    if string == 'КОНЕЦ':
+    if string == 'THE END':
         break
     all_string.append(string)
 
 if all_string:
     min_string = min(all_string)
     max_string = max(all_string)
-    print(f'Минимальная строка ⬇️: {min_string}')
-    print(f'Максимальная строка ⬆️: {max_string}')
+    print(f'Minimum line ⬇️: {min_string}')
+    print(f'Max line ⬆️: {max_string}')
 
 
 

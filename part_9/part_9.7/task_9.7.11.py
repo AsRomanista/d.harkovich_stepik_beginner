@@ -29,5 +29,5 @@ for i in string:
     total_new += ord(i) * 3
 
 
-print(f'Старая стоимость: {total_old}🐝')
-print(f'Новая стоимость: {total_new}🐝')
+print(f'Old price: {total_old}🐝')
+print(f'New price: {total_new}🐝')

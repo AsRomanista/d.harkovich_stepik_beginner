@@ -16,4 +16,4 @@ for i in string:
 
 total = total * 3
 
-print(f"Текст сообщения: '{string}'", f'Стоимость сообщения: {total}🐝', sep='\n')
+print(f"Message text: '{string}'", f'Cost of message: {total}🐝', sep='\n')
