@@ -29,9 +29,6 @@ for i in string:
             number = ''
         word += i
 
-if number:
-    letter = chr(int(number))
-    word += letter
 
 word = word.replace('[u-', '').replace(']', '')
 

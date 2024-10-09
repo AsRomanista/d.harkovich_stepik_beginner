@@ -3,9 +3,4 @@
 
 string, separator = input(), input()
 
-list_string = []
-
-for i in string:
-    list_string.append(i)
-
-print(separator.join(list_string))
+print(separator.join(string))

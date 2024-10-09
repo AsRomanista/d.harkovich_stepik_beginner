@@ -23,11 +23,13 @@ total_old = 0
 total_new = 0
 
 for i in string:
-    total_old += ord(i) * 3
+    total_old += ord(i)
     if i in latin:
         i = cyrrilic[latin.find(i)]
-    total_new += ord(i) * 3
+    total_new += ord(i)
 
+total_old *= 3
+total_new *= 3
 
 print(f'Old price: {total_old}🐝')
 print(f'New price: {total_new}🐝')

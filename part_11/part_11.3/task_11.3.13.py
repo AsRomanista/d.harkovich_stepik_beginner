@@ -4,7 +4,7 @@
 number = int(input())
 list_string = []
 
-for i in range(number):
+for _ in range(number):
     list_string.append(input())
 
 k_index = int(input())

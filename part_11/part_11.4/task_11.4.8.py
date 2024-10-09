@@ -15,14 +15,12 @@ new_sorted_list = []
 
 for j in new_list:
     if j < 0:
-        new_sorted_list.append(j)
+        print(j)
 
 for k in new_list:
     if k == 0:
-        new_sorted_list.append(k)
+        print(k)
 
 for l in new_list:
     if l > 0:
-        new_sorted_list.append(l)
-
-print(*new_sorted_list, sep='\n')
+        print(l)

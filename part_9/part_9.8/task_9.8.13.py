@@ -7,20 +7,6 @@
 # Для каждого названия класса ваша программа должна выводить на отдельной строке «YES» (без кавычек),
 # если название класса корректное, или «NO» (без кавычек) в противном случае.
 
-# numbers = int(input())
-# letters = 'АБВГДЕЖЗИЙКЛМНОП'
-# class_names = []
-#
-# for i in range(numbers):
-#     class_name = input()
-#     class_names.append(class_name)
-#
-# for class_name in class_names:
-#     if len(class_name) == 2 and class_name[0].isdigit() and class_name[1] in letters:
-#         print('YES')
-#     else:
-#         print('NO')
-
 numbers = int(input())
 letters = 'АБВГДЕЖЗИЙКЛМНОП'
 

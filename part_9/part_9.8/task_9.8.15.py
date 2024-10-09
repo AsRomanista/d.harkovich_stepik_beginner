@@ -2,17 +2,6 @@
 # Вам необходимо отсортировать эти слова по возрастанию в лексикографическом порядке
 # и вывести их на одной строке, разделяя символом пробела.
 
-# list_string = []
-#
-# for i in range(3):
-#     string = input()
-#     list_string.append(string)
-#
-# list_string = sorted(list_string)
-#
-#
-# print(*list_string)
-
 word1, word2, word3 = input(), input(), input()
 
 max_word = max(word1, word2, word3)
