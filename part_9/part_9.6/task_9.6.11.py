@@ -17,7 +17,7 @@ goal_day = 100 - 0.2 * day_loss
 
 if abs(100 - current_weight) / day_loss <= 0.2:
     print('Something went wrong')
-    print(f'#{day_loss} DAY: CURRENT WEIGHT = {current_weight} kg, WEIGHT GOAL = {goal_day} kg')
 else:
     print('Everything is going according to plan')
-    print(f'#{day_loss} DAY: CURRENT WEIGHT = {current_weight} kg, WEIGHT GOAL = {goal_day} kg')
+
+print(f'#{day_loss} DAY: CURRENT WEIGHT = {current_weight} kg, WEIGHT GOAL = {goal_day} kg')

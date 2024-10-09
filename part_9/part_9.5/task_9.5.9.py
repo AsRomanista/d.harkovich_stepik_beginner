@@ -13,6 +13,6 @@ n = int(input())
 for i in range(1, n + 1):
     comment = input()
     if comment.isspace() or comment == '':
-        print(i, ':', ' COMMENT SHOULD BE DELETED', sep='')
-    else:
-        print(i, ':', ' ', comment, sep='')
+        comment = 'COMMENT SHOULD BE DELETED'
+
+    print(i, ': ', comment, sep='')

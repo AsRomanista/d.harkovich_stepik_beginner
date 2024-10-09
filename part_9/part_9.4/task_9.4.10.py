@@ -5,10 +5,10 @@
 # Помогите определить Джиму количество сообщений от Оди.
 
 n = int(input()) # message number
-total_11 = 0
+total_messages = 0
 
 for i in range(n):
     string = input()
     if string.count('11') >= 3:
-        total_11 += 1
-print(total_11)
+        total_messages += 1
+print(total_messages)

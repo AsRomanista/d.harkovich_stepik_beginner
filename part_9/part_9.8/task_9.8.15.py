@@ -2,13 +2,24 @@
 # Вам необходимо отсортировать эти слова по возрастанию в лексикографическом порядке
 # и вывести их на одной строке, разделяя символом пробела.
 
-list_string = []
+# list_string = []
+#
+# for i in range(3):
+#     string = input()
+#     list_string.append(string)
+#
+# list_string = sorted(list_string)
+#
+#
+# print(*list_string)
 
-for i in range(3):
-    string = input()
-    list_string.append(string)
+word1, word2, word3 = input(), input(), input()
 
-list_string = sorted(list_string)
+max_word = max(word1, word2, word3)
+min_word = min(word1, word2, word3)
 
+total = word1 + word2 + word3
+delete_min = total.replace(min_word, '')
+delete_max = delete_min.replace(max_word,'')
 
-print(*list_string)
+print(min_word, delete_max, max_word)
