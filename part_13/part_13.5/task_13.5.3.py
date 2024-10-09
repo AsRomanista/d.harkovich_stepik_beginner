@@ -2,14 +2,12 @@
 # если число является простым, или False в противном случае.
 
 def is_prime(num):
-    result = 0
-    for i in range(1, num + 1):
-        if num % i == 0:
-            result += 1
-    if result == 2:
-        return True
-    else:
+    if num <= 1:
         return False
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
 
 n = int(input())
 
