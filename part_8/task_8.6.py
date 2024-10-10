@@ -18,7 +18,6 @@ score_0_5 = 0
 last_digit = n % 10
 
 
-
 while n > 0:
     current_digit = n % 10
     if current_digit == 3:

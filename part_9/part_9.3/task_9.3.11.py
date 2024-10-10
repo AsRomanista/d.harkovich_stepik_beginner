@@ -4,8 +4,8 @@
 string = input()
 lower_case = 0
 
-for i in range(len(string)):
-    if string[i] != string.upper()[i]:
+for i in string:
+    if i.islower():
         lower_case += 1
 
 print(lower_case)

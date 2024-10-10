@@ -11,6 +11,6 @@ for i in range(len(string)):
     if string[i] == '*':
         total_mult += 1
 
-print('Символ + встречается', total_plus, 'раз')
-print('Символ * встречается', total_mult, 'раз')
+print('Symbol + appears', total_plus, 'times')
+print('Symbol * appear', total_mult, 'times')
 
