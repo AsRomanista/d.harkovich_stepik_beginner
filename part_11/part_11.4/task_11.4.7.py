@@ -30,7 +30,7 @@ for j in range(len(new_list)):
         if search_string in new_list[j].lower():
             count += 1
     # create search_result list
-    if count == len(search_list):
+    if count == search_number:
         search_result.append(new_list[j])
 
 print(*search_result, sep='\n')
