@@ -1,0 +1,2539 @@
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+deleted file mode 100644
+--- a/.idea/vcs.xml	(revision 9be3e73cb1871b9c84ab37eb012e3f829674093e)
++++ /dev/null	(revision 9be3e73cb1871b9c84ab37eb012e3f829674093e)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="VcsDirectoryMappings">
+-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/modules.xml
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+deleted file mode 100644
+--- a/.idea/modules.xml	(revision 9be3e73cb1871b9c84ab37eb012e3f829674093e)
++++ /dev/null	(revision 9be3e73cb1871b9c84ab37eb012e3f829674093e)
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/d.harkovich_stepik_beginner.iml" filepath="$PROJECT_DIR$/.idea/d.harkovich_stepik_beginner.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/d.harkovich_stepik_beginner.iml
+===================================================================
+diff --git a/.idea/d.harkovich_stepik_beginner.iml b/.idea/d.harkovich_stepik_beginner.iml
+deleted file mode 100644
+--- a/.idea/d.harkovich_stepik_beginner.iml	(revision 9be3e73cb1871b9c84ab37eb012e3f829674093e)
++++ /dev/null	(revision 9be3e73cb1871b9c84ab37eb012e3f829674093e)
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module type="PYTHON_MODULE" version="4">
+-  <component name="NewModuleRootManager">
+-    <content url="file://$MODULE_DIR$" />
+-    <orderEntry type="jdk" jdkName="Python 3.11 (.venv)" jdkType="Python SDK" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-  </component>
+-</module>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+deleted file mode 100644
+--- a/.idea/misc.xml	(revision 9be3e73cb1871b9c84ab37eb012e3f829674093e)
++++ /dev/null	(revision 9be3e73cb1871b9c84ab37eb012e3f829674093e)
+@@ -1,7 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="Black">
+-    <option name="sdkName" value="Python 3.11 (d.harkovich_stepik_beginner)" />
+-  </component>
+-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (.venv)" project-jdk-type="Python SDK" />
+-</project>
+\ No newline at end of file
+Index: .idea/inspectionProfiles/profiles_settings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/inspectionProfiles/profiles_settings.xml b/.idea/inspectionProfiles/profiles_settings.xml
+deleted file mode 100644
+--- a/.idea/inspectionProfiles/profiles_settings.xml	(revision 9be3e73cb1871b9c84ab37eb012e3f829674093e)
++++ /dev/null	(revision 9be3e73cb1871b9c84ab37eb012e3f829674093e)
+@@ -1,6 +0,0 @@
+-<component name="InspectionProjectProfileManager">
+-  <settings>
+-    <option name="USE_PROJECT_PROFILE" value="false" />
+-    <version value="1.0" />
+-  </settings>
+-</component>
+\ No newline at end of file
+Index: part_11/part_11.3/task_11.3.7.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.3/task_11.3.7.py b/part_11/part_11.3/task_11.3.7.py
+new file mode 100644
+--- /dev/null	(date 1728657596335)
++++ b/part_11/part_11.3/task_11.3.7.py	(date 1728657596335)
+@@ -0,0 +1,12 @@
++# На вход программе подается натуральное число
++# n, а затем n строк. Напишите программу, которая создает из указанных строк список и выводит его.
++
++number = int(input())
++
++list_string = []
++
++for i in range(number):
++    string = input()
++    list_string.append(string)
++
++print(list_string)
+\ No newline at end of file
+Index: part_11/part_11.3/task_11.3.8.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.3/task_11.3.8.py b/part_11/part_11.3/task_11.3.8.py
+new file mode 100644
+--- /dev/null	(date 1728657596336)
++++ b/part_11/part_11.3/task_11.3.8.py	(date 1728657596336)
+@@ -0,0 +1,11 @@
++# Напишите программу, выводящую следующий список:
++# ['a', 'bb', 'ccc', 'dddd', 'eeeee', 'ffffff', ...]
++
++alphabet_list = []
++counter = 1
++
++for i in range(97, 123):
++    alphabet_list.append(chr(i) * counter)
++    counter += 1
++
++print(alphabet_list)
+\ No newline at end of file
+Index: part_11/part_11.3/task_11.3.9.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.3/task_11.3.9.py b/part_11/part_11.3/task_11.3.9.py
+new file mode 100644
+--- /dev/null	(date 1728657596336)
++++ b/part_11/part_11.3/task_11.3.9.py	(date 1728657596336)
+@@ -0,0 +1,12 @@
++# На вход программе подается натуральное число n, а затем n целых чисел.
++# Напишите программу, которая создает из указанных чисел список их кубов.
++
++number = int(input())
++list_cube = []
++
++for i in range(number):
++    digits = int(input())
++
++    list_cube.append(digits ** 3)
++
++print(list_cube)
+\ No newline at end of file
+Index: part_11/part_11.4/task_11.4.2.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.4/task_11.4.2.py b/part_11/part_11.4/task_11.4.2.py
+new file mode 100644
+--- /dev/null	(date 1728657596336)
++++ b/part_11/part_11.4/task_11.4.2.py	(date 1728657596336)
+@@ -0,0 +1,10 @@
++# Дополните приведенный код, так чтобы он вывел сумму квадратов элементов списка numbers.
++
++numbers = [1, 78, 23, -65, 99, 9089, 34, -32, 0, -67, 1, 11, 111]
++
++total = 0
++
++for i in numbers:
++    total += i ** 2
++
++print(total)
+\ No newline at end of file
+Index: part_11/part_11.4/task_11.4.3.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.4/task_11.4.3.py b/part_11/part_11.4/task_11.4.3.py
+new file mode 100644
+--- /dev/null	(date 1728657596337)
++++ b/part_11/part_11.4/task_11.4.3.py	(date 1728657596337)
+@@ -0,0 +1,20 @@
++# На вход программе подается натуральное число n, а затем n целых чисел.
++# Напишите программу, которая для каждого введенного числа x выводит значение функции f(x) - x ** 2 + 2 * x + 1,
++# каждое на отдельной строке.
++
++number = int(input())
++
++new_list = []
++
++for _ in range(number):
++    digit = int(input())
++    new_list.append(digit)
++
++print(*new_list, sep='\n')
++print()
++
++for i in range(len(new_list)):
++    j = (int(new_list[i]) ** 2 + 2 * int(new_list[i]) + 1)
++    print(j, sep='\n')
++
++
+Index: part_11/part_11.4/task_11.4.4.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.4/task_11.4.4.py b/part_11/part_11.4/task_11.4.4.py
+new file mode 100644
+--- /dev/null	(date 1728657596337)
++++ b/part_11/part_11.4/task_11.4.4.py	(date 1728657596337)
+@@ -0,0 +1,19 @@
++# При анализе данных, собранных в рамках научного эксперимента, бывает полезно удалить самое большое и самое маленькое значение.
++# На вход программе подается натуральное число n, а затем n различных натуральных чисел.
++# Напишите программу, которая удаляет наименьшее и наибольшее значение из указанных чисел,
++# а затем выводит оставшиеся числа каждое на отдельной строке, не меняя их порядок.
++
++number = int(input())
++
++new_list = []
++
++for i in range(number):
++    digit = int(input())
++    new_list.append(digit)
++
++new_list.remove(max(new_list))
++new_list.remove(min(new_list))
++
++print(*new_list, sep='\n')
++
++
+Index: part_11/part_11.4/task_11.4.5.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.4/task_11.4.5.py b/part_11/part_11.4/task_11.4.5.py
+new file mode 100644
+--- /dev/null	(date 1728657596338)
++++ b/part_11/part_11.4/task_11.4.5.py	(date 1728657596338)
+@@ -0,0 +1,13 @@
++# На вход программе подается натуральное число n, а затем n строк.
++# Напишите программу, которая выводит только уникальные строки, в том же порядке, в котором они были введены.
++
++number = int(input())
++
++new_list = []
++
++for i in range(number):
++    string = input()
++    if string not in new_list:
++        new_list.append(string)
++
++print(*new_list, sep='\n')
+Index: part_11/part_11.4/task_11.4.6.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.4/task_11.4.6.py b/part_11/part_11.4/task_11.4.6.py
+new file mode 100644
+--- /dev/null	(date 1728657596338)
++++ b/part_11/part_11.4/task_11.4.6.py	(date 1728657596338)
+@@ -0,0 +1,16 @@
++# На вход программе подается натуральное число n, затем n строк, затем еще одна строка — поисковый запрос.
++# Напишите программу, которая выводит все введенные строки, в которых встречается поисковый запрос.
++
++number = int(input())
++
++new_list = []
++
++for i in range(number):
++    string = input()
++    new_list.append(string)
++
++search_string = input().lower()
++
++for j in new_list:
++    if search_string in j.lower():
++        print(j)
+Index: part_11/part_11.4/task_11.4.7.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.4/task_11.4.7.py b/part_11/part_11.4/task_11.4.7.py
+new file mode 100644
+--- /dev/null	(date 1728657596339)
++++ b/part_11/part_11.4/task_11.4.7.py	(date 1728657596339)
+@@ -0,0 +1,36 @@
++# На вход программе подается натуральное число n, затем n строк,
++# затем число k — количество поисковых запросов,
++# затем k строк — поисковые запросы. Напишите программу,
++# которая выводит все введенные строки, в которых встречаются одновременно все поисковые запросы.
++
++number = int(input())
++
++new_list = []
++
++# all values in the list
++for i in range(number):
++    string = input()
++    new_list.append(string)
++
++search_number = int(input())
++search_list = []
++
++# all searching values in the list
++for k in range(search_number):
++    search_string = input().lower()
++    search_list.append(search_string)
++
++search_result = []
++
++# check all strings
++for j in range(len(new_list)):
++    count = 0
++    # check all search requests
++    for search_string in search_list:
++        if search_string in new_list[j].lower():
++            count += 1
++    # create search_result list
++    if count == search_number:
++        search_result.append(new_list[j])
++
++print(*search_result, sep='\n')
+Index: part_11/part_11.4/task_11.4.8.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.4/task_11.4.8.py b/part_11/part_11.4/task_11.4.8.py
+new file mode 100644
+--- /dev/null	(date 1728657596339)
++++ b/part_11/part_11.4/task_11.4.8.py	(date 1728657596339)
+@@ -0,0 +1,26 @@
++# На вход программе подается натуральное число n, а затем n целых чисел.
++# Напишите программу, которая сначала выводит все отрицательные числа, затем нули,
++# а затем все положительные числа, каждое на отдельной строке.
++# Числа должны быть выведены в том же порядке, в котором они были введены.
++
++number = int(input())
++
++new_list = []
++
++for i in range(number):
++    digit = int(input())
++    new_list.append(digit)
++
++new_sorted_list = []
++
++for j in new_list:
++    if j < 0:
++        print(j)
++
++for k in new_list:
++    if k == 0:
++        print(k)
++
++for l in new_list:
++    if l > 0:
++        print(l)
+\ No newline at end of file
+Index: part_11/part_11.5/task_11.5.10.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.5/task_11.5.10.py b/part_11/part_11.5/task_11.5.10.py
+new file mode 100644
+--- /dev/null	(date 1728657596339)
++++ b/part_11/part_11.5/task_11.5.10.py	(date 1728657596339)
+@@ -0,0 +1,5 @@
++# На вход программе подается строка текста. Напишите программу, которая выводит слова введенной строки в столбик.
++
++string = input()
++
++print(*string.split(), sep='\n')
+\ No newline at end of file
+Index: part_11/part_11.5/task_11.5.11.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.5/task_11.5.11.py b/part_11/part_11.5/task_11.5.11.py
+new file mode 100644
+--- /dev/null	(date 1728657596340)
++++ b/part_11/part_11.5/task_11.5.11.py	(date 1728657596340)
+@@ -0,0 +1,10 @@
++# На вход программе подается строка текста,
++# содержащая имя, отчество и фамилию человека. Напишите программу, которая выводит инициалы человека.
++
++string = input()
++
++split_words = string.split()
++
++
++for i in split_words:
++    print(i[0], end='.')
+\ No newline at end of file
+Index: part_11/part_11.5/task_11.5.12.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.5/task_11.5.12.py b/part_11/part_11.5/task_11.5.12.py
+new file mode 100644
+--- /dev/null	(date 1728657596340)
++++ b/part_11/part_11.5/task_11.5.12.py	(date 1728657596340)
+@@ -0,0 +1,10 @@
++# В операционной системе Windows полное имя файла состоит из буквы диска,
++# после которого ставится двоеточие и символ  "\",
++# затем через такой же символ перечисляются подкаталоги (папки), в которых находится файл,
++# в конце пишется имя файла (C:\Windows\System32\calc.exe).
++# На вход программе подается одна строка с корректным именем файла в операционной системе Windows.
++# Напишите программу, которая разбирает строку на части, разделенные символом "\". Каждую часть вывести в отдельной строке.
++
++string = input()
++
++print(*string.split('\\'), sep='\n')
+\ No newline at end of file
+Index: part_11/part_11.5/task_11.5.13.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.5/task_11.5.13.py b/part_11/part_11.5/task_11.5.13.py
+new file mode 100644
+--- /dev/null	(date 1728657596341)
++++ b/part_11/part_11.5/task_11.5.13.py	(date 1728657596341)
+@@ -0,0 +1,7 @@
++# На вход программе подается строка текста, содержащая целые числа.
++# Напишите программу, которая по заданным числам строит столбчатую диаграмму.
++
++string = input().split()
++
++for i in string:
++    print('+' * int(i))
+\ No newline at end of file
+Index: part_11/part_11.5/task_11.5.14.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.5/task_11.5.14.py b/part_11/part_11.5/task_11.5.14.py
+new file mode 100644
+--- /dev/null	(date 1728657596341)
++++ b/part_11/part_11.5/task_11.5.14.py	(date 1728657596341)
+@@ -0,0 +1,11 @@
++# На вход программе подается строка текста, содержащая 4 целых неотрицательных числа, разделенных точкой.
++# Напишите программу, которая определяет, является ли введенная строка текста корректным ip-адресом.
++
++ip = input().split('.')
++
++for i in ip:
++    if not (0 <= int(i) <= 255):
++        print('NO')
++        break
++else:
++    print('YES')
+\ No newline at end of file
+Index: part_11/part_11.5/task_11.5.15.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.5/task_11.5.15.py b/part_11/part_11.5/task_11.5.15.py
+new file mode 100644
+--- /dev/null	(date 1728657596341)
++++ b/part_11/part_11.5/task_11.5.15.py	(date 1728657596341)
+@@ -0,0 +1,6 @@
++# На вход программе подается строка текста и строка-разделитель.
++# Напишите программу, которая вставляет указанный разделитель между каждым символом введенной строки текста.
++
++string, separator = input(), input()
++
++print(separator.join(string))
+\ No newline at end of file
+Index: part_11/part_11.5/task_11.5.16.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.5/task_11.5.16.py b/part_11/part_11.5/task_11.5.16.py
+new file mode 100644
+--- /dev/null	(date 1728657596342)
++++ b/part_11/part_11.5/task_11.5.16.py	(date 1728657596342)
+@@ -0,0 +1,17 @@
++# На вход программе подается строка текста, содержащая целые числа.
++# Из данной строки формируется список чисел.
++# Напишите программу, которая подсчитывает, сколько в полученном списке пар элементов, равных друг другу.
++# Считается, что любые два элемента, равные друг другу образуют одну пару, которую необходимо посчитать.
++
++string = input().split()
++count = 0
++
++for i in range(len(string)):
++    string[i] = int(string[i])
++
++for j in range(len(string)):
++    for k in range(j + 1, len(string)):
++        if string[j] == string[k]:
++            count += 1
++
++print(count)
+\ No newline at end of file
+Index: part_8/task_8.3.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># На обработку поступает последовательность из 4 целых чисел.\r\n# Известно, что вводимые числа по абсолютной величине не превышают 10**8.\r\n# Нужно написать программу, которая выводит на экран количество нечетных чисел в исходной последовательности\r\n# и максимальное нечетное число.\r\n# Если нечетных чисел нет, требуется на экран вывести «NO».\r\n# Программист торопился и написал программу неправильно.\r\n\r\nn = 4\r\ncount = 0\r\nmaximum = -10**8\r\n\r\nfor i in range(n):\r\n    num = int(input())\r\n    if num % 2 != 0:\r\n        count += 1\r\n        if num > maximum:\r\n            maximum = num\r\nif count > 0:\r\n    print(count)\r\n    print(maximum)\r\nelse:\r\n    print('NO')
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_8/task_8.3.py b/part_8/task_8.3.py
+--- a/part_8/task_8.3.py	(revision 9be3e73cb1871b9c84ab37eb012e3f829674093e)
++++ b/part_8/task_8.3.py	(date 1728657596346)
+@@ -5,6 +5,12 @@
+ # Если нечетных чисел нет, требуется на экран вывести «NO».
+ # Программист торопился и написал программу неправильно.
+ 
++# Найдите все ошибки в этой программе (их может быть одна или несколько).
++# Известно, что каждая ошибка затрагивает только одну строку и может быть исправлена без изменения других строк.
++
++# Примечание. Обратите внимание, что требуется найти ошибки в имеющейся программе,
++# а не написать свою, возможно, использующую другой алгоритм решения.
++
+ n = 4
+ count = 0
+ maximum = -10**8
+Index: part_11/part_11.6/task_11.6.10.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.6/task_11.6.10.py b/part_11/part_11.6/task_11.6.10.py
+new file mode 100644
+--- /dev/null	(date 1728657596342)
++++ b/part_11/part_11.6/task_11.6.10.py	(date 1728657596342)
+@@ -0,0 +1,15 @@
++# На вход программе подается строка текста, содержащая целые числа. Из данной строки формируется список чисел.
++# Напишите программу, которая сортирует и выводит данный список сначала по возрастанию, а затем по убыванию.
++digit_list = []
++
++
++for i in input().split():
++    digit_list.append(int(i))
++
++digit_list.sort()
++print(*digit_list)
++digit_list.sort(reverse=True)
++print(*digit_list)
++
++
++
+Index: part_11/part_11.6/task_11.6.5.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.6/task_11.6.5.py b/part_11/part_11.6/task_11.6.5.py
+new file mode 100644
+--- /dev/null	(date 1728657596343)
++++ b/part_11/part_11.6/task_11.6.5.py	(date 1728657596343)
+@@ -0,0 +1,21 @@
++# Дополните приведённый ниже код, чтобы он:
++# Заменил второй (по порядку) элемент списка на 17;
++# Добавил числа 4, 5 и 6 в конец списка;
++# Удалил первый (по порядку) элемент списка;
++# Удвоил список;
++# Вставил число 25 по индексу 3;
++# Вывел список с помощью функции print()
++
++numbers = [8, 9, 10, 11]
++
++numbers[1] = 17
++
++numbers.extend([4, 5, 6])
++
++numbers.pop(0)
++
++numbers.extend(numbers.copy())
++
++numbers.insert(3, 25)
++
++print(numbers)
+Index: part_11/part_11.6/task_11.6.6.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.6/task_11.6.6.py b/part_11/part_11.6/task_11.6.6.py
+new file mode 100644
+--- /dev/null	(date 1728657596343)
++++ b/part_11/part_11.6/task_11.6.6.py	(date 1728657596343)
+@@ -0,0 +1,18 @@
++# На вход программе подается строка текста, содержащая различные натуральные числа.
++# Вам необходимо переставить максимальный и минимальный элементы местами и вывести измененную строку.
++
++digits = input()
++
++digits_list = []
++
++for digit in digits.split():
++    digits_list.append(int(digit))
++
++
++max_digit = digits_list.index(max(digits_list))
++min_digit = digits_list.index(min(digits_list))
++
++
++digits_list[max_digit], digits_list[min_digit] = digits_list[min_digit], digits_list[max_digit]
++
++print(*digits_list)
+\ No newline at end of file
+Index: part_8/task_8.6.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Дано натуральное число. Напишите программу, которая вычисляет:\r\n# количество цифр 3 в нем;\r\n# сколько раз в нем встречается последняя цифра;\r\n# количество четных цифр;\r\n# сумму его цифр, больших пяти;\r\n# произведение цифр, больших семи (если цифр больших семи нет, то вывести 1, если такая цифра одна, то вывести ее);\r\n# сколько раз в нем встречаются цифры 0 и 5 (всего суммарно).\r\n\r\nn = int(input())\r\n\r\nnum_3 = 0\r\nlast_digit_score = 0\r\neven_digit_score = 0\r\nmore_5_score = 0\r\nmore_7_score = 1\r\nscore_0_5 = 0\r\n\r\nlast_digit = n % 10\r\n\r\n\r\n\r\nwhile n > 0:\r\n    current_digit = n % 10\r\n    if current_digit == 3:\r\n        num_3 += 1\r\n    if  current_digit == last_digit:\r\n        last_digit_score += 1\r\n    if current_digit % 2 == 0:\r\n        even_digit_score += 1\r\n    if current_digit > 5:\r\n        more_5_score += current_digit\r\n    if current_digit > 7:\r\n        more_7_score *= current_digit\r\n    if current_digit == 0 or current_digit == 5:\r\n        score_0_5 += 1\r\n    n //= 10\r\n\r\n\r\nprint(num_3)\r\nprint(last_digit_score)\r\nprint(even_digit_score)\r\nprint(more_5_score)\r\nprint(more_7_score)\r\nprint(score_0_5)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_8/task_8.6.py b/part_8/task_8.6.py
+--- a/part_8/task_8.6.py	(revision 9be3e73cb1871b9c84ab37eb012e3f829674093e)
++++ b/part_8/task_8.6.py	(date 1728657596347)
+@@ -18,7 +18,6 @@
+ last_digit = n % 10
+ 
+ 
+-
+ while n > 0:
+     current_digit = n % 10
+     if current_digit == 3:
+Index: part_11/part_11.6/task_11.6.7.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.6/task_11.6.7.py b/part_11/part_11.6/task_11.6.7.py
+new file mode 100644
+--- /dev/null	(date 1728657596343)
++++ b/part_11/part_11.6/task_11.6.7.py	(date 1728657596343)
+@@ -0,0 +1,12 @@
++# На вход программе подается строка, содержащая английский текст.
++# Напишите программу, которая подсчитывает общее количество артиклей: 'a', 'an', 'the'.
++
++string = input().lower()
++
++string_list = string.split()
++
++a = string_list.count('a')
++an = string_list.count('an')
++the = string_list.count('the')
++
++print('Total number of articles:', (a + an + the))
+\ No newline at end of file
+Index: part_11/part_11.6/task_11.6.8.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.6/task_11.6.8.py b/part_11/part_11.6/task_11.6.8.py
+new file mode 100644
+--- /dev/null	(date 1728657596344)
++++ b/part_11/part_11.6/task_11.6.8.py	(date 1728657596344)
+@@ -0,0 +1,15 @@
++# Немалоизвестный в пустошах Мохаве Курьер забрел в Хидден-Вэли – секретный бункер Братства Стали и любезно соглашается помочь им
++# в решении их проблем.
++# Одной из такой проблем являлся странный компьютерный вирус, который проявлялся в виде появления комментариев к программам
++# на терминалах Братства Стали.
++# Известно, что программисты Братства никогда не оставляют комментарии к коду и пишут программы на Python,
++# поэтому удаление всех этих комментариев никак не навредит им. Помогите писцу Ибсену удалить все комментарии из программы.
++
++number = int(input()[1:])
++for i in range(number):
++    text = input()
++    if '#' in text:
++        index_hash = text.index('#')
++        print(text[:index_hash].rstrip())
++    else:
++        print(text)
+\ No newline at end of file
+Index: part_10/task_10.2.1.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_10/task_10.2.1.py b/part_10/task_10.2.1.py
+new file mode 100644
+--- /dev/null	(date 1728657596324)
++++ b/part_10/task_10.2.1.py	(date 1728657596324)
+@@ -0,0 +1,4 @@
++# Дополните приведенный ниже код, так чтобы в результате выполнения программы была выведена длина строки s
++
++s = 'Python rocks!'
++print(len(s))
+\ No newline at end of file
+Index: part_10/task_10.2.10.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_10/task_10.2.10.py b/part_10/task_10.2.10.py
+new file mode 100644
+--- /dev/null	(date 1728657596325)
++++ b/part_10/task_10.2.10.py	(date 1728657596325)
+@@ -0,0 +1,18 @@
++# На вход программе подается строка текста.
++# Напишите программу, которая выводит индекс второго вхождения буквы «f».
++# Если буква «f» встречается только один раз, выведите число −1, а если не встречается ни разу, выведите число −2.
++
++string = input()
++
++total = 0
++
++for i in string:
++    if i == 'f':
++        total += 1
++
++if total >= 2:
++    print(string.find('f', (string.find('f') + 1)))
++elif total == 1:
++    print('-1')
++else:
++    print('-2')
+\ No newline at end of file
+Index: part_10/task_10.2.11.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_10/task_10.2.11.py b/part_10/task_10.2.11.py
+new file mode 100644
+--- /dev/null	(date 1728657596325)
++++ b/part_10/task_10.2.11.py	(date 1728657596325)
+@@ -0,0 +1,12 @@
++# На вход программе подается строка текста в которой буква «h» встречается как минимум два раза.
++# Напишите программу, которая возвращает исходную строку и переворачивает последовательность символов,
++# заключенную между первым и последним вхождением буквы «h».
++
++string = input()
++
++start_h = string.find('h')
++end_h = string.rfind('h')
++
++reverse = string[(start_h + 1):end_h][::-1]
++
++print(string[:(start_h + 1)] + reverse + string[end_h:])
+\ No newline at end of file
+Index: part_10/task_10.2.2.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_10/task_10.2.2.py b/part_10/task_10.2.2.py
+new file mode 100644
+--- /dev/null	(date 1728657596326)
++++ b/part_10/task_10.2.2.py	(date 1728657596326)
+@@ -0,0 +1,4 @@
++# Дополните приведенный ниже код, так чтобы в результате выполнения программы был выведен четвертый символ строки s.
++
++s = 'Python rocks!'
++print(s[3])
+\ No newline at end of file
+Index: part_10/task_10.2.3.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_10/task_10.2.3.py b/part_10/task_10.2.3.py
+new file mode 100644
+--- /dev/null	(date 1728657596326)
++++ b/part_10/task_10.2.3.py	(date 1728657596326)
+@@ -0,0 +1,5 @@
++# Дополните приведенный ниже код, так чтобы в результате выполнения программы были выведены символы строки s
++# со 2-го по 5-й включительно.
++
++s = 'Python rocks!'
++print(s[1:5])
+\ No newline at end of file
+Index: part_9/part_9.1/task_9.1.9.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># На вход программе подаются три строки: имя, фамилия и отчество (именно в таком порядке).\r\n# Напишите программу, которая выводит инициалы человека.\r\n\r\nname = input()\r\nsurname = input()\r\npatronymic = input()\r\n\r\nprint(surname[0] + name[0] + patronymic[0])
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.1/task_9.1.9.py b/part_9/part_9.1/task_9.1.9.py
+--- a/part_9/part_9.1/task_9.1.9.py	(revision 9be3e73cb1871b9c84ab37eb012e3f829674093e)
++++ b/part_9/part_9.1/task_9.1.9.py	(date 1728657596351)
+@@ -5,4 +5,18 @@
+ surname = input()
+ patronymic = input()
+ 
+-print(surname[0] + name[0] + patronymic[0])
+\ No newline at end of file
++print(surname[0] + name[0] + patronymic[0])
++
++# via 'for'
++
++initials = ''
++
++for i in range(3):
++    if i == 0:
++        initials += surname[0]
++    elif i == 1:
++        initials += name[0]
++    elif i == 2:
++        initials += patronymic[0]
++
++print(initials)
+\ No newline at end of file
+Index: part_9/part_9.1/task_9.1.10.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># На вход программе подается одна строка состоящая из цифр.\r\n# Напишите программу, которая считает сумму цифр данной строки.\r\n\r\nstring = input()\r\ntotal = 0\r\n\r\nfor i in range(len(string)):\r\n    total += int(string[i])\r\nprint(total)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.1/task_9.1.10.py b/part_9/part_9.1/task_9.1.10.py
+--- a/part_9/part_9.1/task_9.1.10.py	(revision 9be3e73cb1871b9c84ab37eb012e3f829674093e)
++++ b/part_9/part_9.1/task_9.1.10.py	(date 1728657596348)
+@@ -4,6 +4,11 @@
+ string = input()
+ total = 0
+ 
+-for i in range(len(string)):
+-    total += int(string[i])
+-print(total)
+\ No newline at end of file
++# for i in range(len(string)):
++#     total += int(string[i])
++# print(total)
++
++for i in string:
++    total += int(i)
++print(total)
++
+Index: part_10/task_10.2.4.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_10/task_10.2.4.py b/part_10/task_10.2.4.py
+new file mode 100644
+--- /dev/null	(date 1728657596326)
++++ b/part_10/task_10.2.4.py	(date 1728657596326)
+@@ -0,0 +1,5 @@
++# Дополните приведенный ниже код, так чтобы в результате выполнения программы была выведена строка s
++# без ведущих и замыкающих пробельных символов.
++
++s = '    Python rocks!     '
++print(s.strip())
+\ No newline at end of file
+Index: part_10/task_10.2.5.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_10/task_10.2.5.py b/part_10/task_10.2.5.py
+new file mode 100644
+--- /dev/null	(date 1728657596327)
++++ b/part_10/task_10.2.5.py	(date 1728657596327)
+@@ -0,0 +1,5 @@
++# Дополните приведенный ниже код, так чтобы в результате выполнения программы была выведена строка s
++# заглавными буквами (в верхнем регистре).
++
++s = 'Python rocks!'
++print(s.upper())
+\ No newline at end of file
+Index: part_9/part_9.1/task_9.1.11.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># На вход программе подается одна строка.\r\n# Напишите программу, которая выводит сообщение «Цифра» (без кавычек),\r\n# если строка содержит цифру. В противном случае вывести сообщение «Цифр нет» (без кавычек).\r\n\r\nstring = input()\r\n\r\nfor c in range(len(string)):\r\n    if string[c] in '0123456789':\r\n        print('Цифра')\r\n        break\r\nelse:\r\n    print('Цифр нет')\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.1/task_9.1.11.py b/part_9/part_9.1/task_9.1.11.py
+--- a/part_9/part_9.1/task_9.1.11.py	(revision 9be3e73cb1871b9c84ab37eb012e3f829674093e)
++++ b/part_9/part_9.1/task_9.1.11.py	(date 1728657596348)
+@@ -6,7 +6,7 @@
+ 
+ for c in range(len(string)):
+     if string[c] in '0123456789':
+-        print('Цифра')
++        print('digit')
+         break
+ else:
+-    print('Цифр нет')
++    print('no digits')
+Index: part_10/task_10.2.6.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_10/task_10.2.6.py b/part_10/task_10.2.6.py
+new file mode 100644
+--- /dev/null	(date 1728657596327)
++++ b/part_10/task_10.2.6.py	(date 1728657596327)
+@@ -0,0 +1,5 @@
++# Дополните приведенный ниже код, так чтобы в результате выполнения программы была выведена строка s
++# в которой символ «o» заменен на символ «@».
++
++s = 'Python rocks!'
++print(s.replace('o', '@'))
+\ No newline at end of file
+Index: part_10/task_10.2.7.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_10/task_10.2.7.py b/part_10/task_10.2.7.py
+new file mode 100644
+--- /dev/null	(date 1728657596327)
++++ b/part_10/task_10.2.7.py	(date 1728657596327)
+@@ -0,0 +1,8 @@
++# На вход программе подается строка текста.
++# Напишите программу, которая удаляет из нее все символы с индексами, кратными 3 то есть символы с индексами 0, 3, 6, ....
++
++string = input()
++
++for i in range(len(string)):
++    if i % 3 != 0:
++        print(string[i], end='')
+\ No newline at end of file
+Index: part_9/part_9.1/task_9.1.12.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># На вход программе подается одна строка.\r\n# Напишите программу, которая определяет, сколько раз в строке встречаются символы + и *.\r\n\r\nstring = input()\r\ntotal_plus = 0\r\ntotal_mult = 0\r\n\r\nfor i in range(len(string)):\r\n    if string[i] == '+':\r\n        total_plus += 1\r\n    if string[i] == '*':\r\n        total_mult += 1\r\n\r\nprint('Символ + встречается', total_plus, 'раз')\r\nprint('Символ * встречается', total_mult, 'раз')\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.1/task_9.1.12.py b/part_9/part_9.1/task_9.1.12.py
+--- a/part_9/part_9.1/task_9.1.12.py	(revision 9be3e73cb1871b9c84ab37eb012e3f829674093e)
++++ b/part_9/part_9.1/task_9.1.12.py	(date 1728657596349)
+@@ -11,6 +11,6 @@
+     if string[i] == '*':
+         total_mult += 1
+ 
+-print('Символ + встречается', total_plus, 'раз')
+-print('Символ * встречается', total_mult, 'раз')
++print('Symbol + appears', total_plus, 'times')
++print('Symbol * appear', total_mult, 'times')
+ 
+Index: part_10/task_10.2.8.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_10/task_10.2.8.py b/part_10/task_10.2.8.py
+new file mode 100644
+--- /dev/null	(date 1728657596328)
++++ b/part_10/task_10.2.8.py	(date 1728657596328)
+@@ -0,0 +1,5 @@
++# На вход программе подается строка текста. Напишите программу, которая заменяет все вхождения цифры 1 на слово «one».
++
++string = input()
++
++print(string.replace('1', 'one'))
+\ No newline at end of file
+Index: part_10/task_10.2.9.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_10/task_10.2.9.py b/part_10/task_10.2.9.py
+new file mode 100644
+--- /dev/null	(date 1728657596328)
++++ b/part_10/task_10.2.9.py	(date 1728657596328)
+@@ -0,0 +1,5 @@
++# На вход программе подается строка текста. Напишите программу, которая удаляет все вхождения символа «@».
++
++string = input()
++
++print(string.replace('@', ''))
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"f7625a6a-5996-4e79-9b82-dd8816d7c82c\" name=\"Changes\" comment=\"complete topic 9.2\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"tasks-from-part13\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;AsRomanista&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/AsRomanista/d.harkovich_stepik_beginner.git&quot;,\r\n    &quot;accountId&quot;: &quot;399f146c-4f6f-401f-8a0d-182635b4a4ee&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 6\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2lVb8i4w6bMpbKbmvC4aKdCDdNn\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Python.task_13.5.10.executor\": \"Run\",\r\n    \"Python.task_13.5.6.executor\": \"Run\",\r\n    \"Python.task_13.5.7.executor\": \"Run\",\r\n    \"Python.task_13.5.8.executor\": \"Run\",\r\n    \"Python.task_13.5.9.executor\": \"Run\",\r\n    \"Python.task_14.1.1.executor\": \"Run\",\r\n    \"Python.task_14.1.10.executor\": \"Run\",\r\n    \"Python.task_14.1.4 (1).executor\": \"Run\",\r\n    \"Python.task_14.1.5.executor\": \"Run\",\r\n    \"Python.task_14.1.6.executor\": \"Run\",\r\n    \"Python.task_14.1.7.executor\": \"Run\",\r\n    \"Python.task_14.1.9.executor\": \"Run\",\r\n    \"Python.task_7.9.7.executor\": \"Run\",\r\n    \"Python.task_8.1.executor\": \"Run\",\r\n    \"Python.task_8.2.executor\": \"Run\",\r\n    \"Python.task_8.3.executor\": \"Run\",\r\n    \"Python.task_8.4.executor\": \"Run\",\r\n    \"Python.task_8.5.executor\": \"Run\",\r\n    \"Python.task_8.6.executor\": \"Run\",\r\n    \"Python.task_8.7.executor\": \"Run\",\r\n    \"Python.task_8.executor\": \"Run\",\r\n    \"Python.task_9.1.10.executor\": \"Run\",\r\n    \"Python.task_9.1.11.executor\": \"Run\",\r\n    \"Python.task_9.1.12.executor\": \"Run\",\r\n    \"Python.task_9.1.13.executor\": \"Run\",\r\n    \"Python.task_9.1.14.executor\": \"Run\",\r\n    \"Python.task_9.1.15.executor\": \"Run\",\r\n    \"Python.task_9.1.5.executor\": \"Run\",\r\n    \"Python.task_9.1.6.executor\": \"Run\",\r\n    \"Python.task_9.1.7.executor\": \"Run\",\r\n    \"Python.task_9.1.8.executor\": \"Run\",\r\n    \"Python.task_9.1.9.executor\": \"Run\",\r\n    \"Python.task_9.1.executor\": \"Run\",\r\n    \"Python.task_9.2.10.executor\": \"Run\",\r\n    \"Python.task_9.2.11.executor\": \"Run\",\r\n    \"Python.task_9.2.12.executor\": \"Run\",\r\n    \"Python.task_9.2.13.executor\": \"Run\",\r\n    \"Python.task_9.2.14.executor\": \"Run\",\r\n    \"Python.task_9.2.7.executor\": \"Run\",\r\n    \"Python.task_9.2.8.executor\": \"Run\",\r\n    \"Python.task_9.2.9.executor\": \"Run\",\r\n    \"Python.task_9.3.10.executor\": \"Run\",\r\n    \"Python.task_9.3.11.executor\": \"Run\",\r\n    \"Python.task_9.3.2.executor\": \"Run\",\r\n    \"Python.task_9.3.8.executor\": \"Run\",\r\n    \"Python.task_9.3.9.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"git-widget-placeholder\": \"tasks-from-part14\",\r\n    \"settings.editor.selected.configurable\": \"vcs.Git\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Dmitry\\PycharmProjects\\d.harkovich_stepik_beginner\\part_13\" />\r\n      <recent name=\"C:\\Users\\Dmitry\\PycharmProjects\\d.harkovich_stepik_beginner\\part_9\\part_9.1\" />\r\n      <recent name=\"C:\\Users\\Dmitry\\PycharmProjects\\d.harkovich_stepik_beginner\" />\r\n      <recent name=\"C:\\Users\\Dmitry\\PycharmProjects\\d.harkovich_stepik_beginner\\part_8\" />\r\n      <recent name=\"C:\\Users\\Dmitry\\PycharmProjects\\d.harkovich_stepik_beginner\\part_1-7\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Python.task_14.1.10\">\r\n    <configuration name=\"task_14.1.10\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"d.harkovich_stepik_beginner\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/part_14/part_14.1\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/part_14/part_14.1/task_14.1.10.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"task_14.1.5\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"d.harkovich_stepik_beginner\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/part_14/part_14.1\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/part_14/part_14.1/task_14.1.5.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"task_14.1.6\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"d.harkovich_stepik_beginner\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/part_14/part_14.1\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/part_14/part_14.1/task_14.1.6.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"task_14.1.7\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"d.harkovich_stepik_beginner\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/part_14/part_14.1\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/part_14/part_14.1/task_14.1.7.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"task_14.1.9\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"d.harkovich_stepik_beginner\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/part_14/part_14.1\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/part_14/part_14.1/task_14.1.9.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Python.task_14.1.10\" />\r\n        <item itemvalue=\"Python.task_14.1.9\" />\r\n        <item itemvalue=\"Python.task_14.1.7\" />\r\n        <item itemvalue=\"Python.task_14.1.6\" />\r\n        <item itemvalue=\"Python.task_14.1.5\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-python-sdk-0e3be3396995-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23339.19\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"SvnConfiguration\">\r\n    <configuration>C:\\Users\\Dmitry\\AppData\\Roaming\\Subversion</configuration>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"f7625a6a-5996-4e79-9b82-dd8816d7c82c\" name=\"Changes\" comment=\"\" />\r\n      <created>1725268032893</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1725268032893</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"new project for stepik_beginner\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1725268905606</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1725268905606</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"new project for stepik_beginner\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1725268912345</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1725268912345</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"rename and add new file for topic #8 for stepik_beginner\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1725269282431</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1725269282431</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"rename and add new file for topic #8 for stepik_beginner\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1725269290612</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1725269290612</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"new structure\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1725436464406</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1725436464406</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"complete task_7.9.7&#10;passed exam 8.1 and 8.2\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1725915937497</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1725915937497</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"complete topic 9.1\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1725989933826</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1725989933826</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"complete topic 9.2\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1726091539042</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1726091539042</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"9\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"master\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"new project for stepik_beginner\" />\r\n    <MESSAGE value=\"rename and add new file for topic #8 for stepik_beginner\" />\r\n    <MESSAGE value=\"new structure\" />\r\n    <MESSAGE value=\"complete task_7.9.7&#10;passed exam 8.1 and 8.2\" />\r\n    <MESSAGE value=\"complete topic 9.1\" />\r\n    <MESSAGE value=\"complete topic 9.2\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"complete topic 9.2\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 9be3e73cb1871b9c84ab37eb012e3f829674093e)
++++ b/.idea/workspace.xml	(date 1728657667781)
+@@ -5,6 +5,7 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="f7625a6a-5996-4e79-9b82-dd8816d7c82c" name="Changes" comment="complete topic 9.2">
++      <change afterPath="$PROJECT_DIR$/part_9/part_9.3/task_9.3.8.py" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -20,11 +21,6 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
+-    <option name="RECENT_BRANCH_BY_REPOSITORY">
+-      <map>
+-        <entry key="$PROJECT_DIR$" value="tasks-from-part13" />
+-      </map>
+-    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="GitHubPullRequestSearchHistory">{
+@@ -43,27 +39,13 @@
+   &quot;associatedIndex&quot;: 6
+ }</component>
+   <component name="ProjectId" id="2lVb8i4w6bMpbKbmvC4aKdCDdNn" />
+-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+-    <ConfirmationsSetting value="1" id="Add" />
+-  </component>
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+   <component name="PropertiesComponent"><![CDATA[{
+   "keyToString": {
+-    "Python.task_13.5.10.executor": "Run",
+-    "Python.task_13.5.6.executor": "Run",
+-    "Python.task_13.5.7.executor": "Run",
+-    "Python.task_13.5.8.executor": "Run",
+-    "Python.task_13.5.9.executor": "Run",
+-    "Python.task_14.1.1.executor": "Run",
+-    "Python.task_14.1.10.executor": "Run",
+-    "Python.task_14.1.4 (1).executor": "Run",
+-    "Python.task_14.1.5.executor": "Run",
+-    "Python.task_14.1.6.executor": "Run",
+-    "Python.task_14.1.7.executor": "Run",
+-    "Python.task_14.1.9.executor": "Run",
+     "Python.task_7.9.7.executor": "Run",
+     "Python.task_8.1.executor": "Run",
+     "Python.task_8.2.executor": "Run",
+@@ -99,144 +81,22 @@
+     "Python.task_9.3.8.executor": "Run",
+     "Python.task_9.3.9.executor": "Run",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "git-widget-placeholder": "tasks-from-part14",
++    "git-widget-placeholder": "master",
+     "settings.editor.selected.configurable": "vcs.Git"
+   }
+ }]]></component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+-      <recent name="C:\Users\Dmitry\PycharmProjects\d.harkovich_stepik_beginner\part_13" />
+       <recent name="C:\Users\Dmitry\PycharmProjects\d.harkovich_stepik_beginner\part_9\part_9.1" />
+       <recent name="C:\Users\Dmitry\PycharmProjects\d.harkovich_stepik_beginner" />
+       <recent name="C:\Users\Dmitry\PycharmProjects\d.harkovich_stepik_beginner\part_8" />
+       <recent name="C:\Users\Dmitry\PycharmProjects\d.harkovich_stepik_beginner\part_1-7" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="Python.task_14.1.10">
+-    <configuration name="task_14.1.10" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+-      <module name="d.harkovich_stepik_beginner" />
+-      <option name="ENV_FILES" value="" />
+-      <option name="INTERPRETER_OPTIONS" value="" />
+-      <option name="PARENT_ENVS" value="true" />
+-      <envs>
+-        <env name="PYTHONUNBUFFERED" value="1" />
+-      </envs>
+-      <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/part_14/part_14.1" />
+-      <option name="IS_MODULE_SDK" value="true" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/part_14/part_14.1/task_14.1.10.py" />
+-      <option name="PARAMETERS" value="" />
+-      <option name="SHOW_COMMAND_LINE" value="false" />
+-      <option name="EMULATE_TERMINAL" value="false" />
+-      <option name="MODULE_MODE" value="false" />
+-      <option name="REDIRECT_INPUT" value="false" />
+-      <option name="INPUT_FILE" value="" />
+-      <method v="2" />
+-    </configuration>
+-    <configuration name="task_14.1.5" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+-      <module name="d.harkovich_stepik_beginner" />
+-      <option name="ENV_FILES" value="" />
+-      <option name="INTERPRETER_OPTIONS" value="" />
+-      <option name="PARENT_ENVS" value="true" />
+-      <envs>
+-        <env name="PYTHONUNBUFFERED" value="1" />
+-      </envs>
+-      <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/part_14/part_14.1" />
+-      <option name="IS_MODULE_SDK" value="true" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/part_14/part_14.1/task_14.1.5.py" />
+-      <option name="PARAMETERS" value="" />
+-      <option name="SHOW_COMMAND_LINE" value="false" />
+-      <option name="EMULATE_TERMINAL" value="false" />
+-      <option name="MODULE_MODE" value="false" />
+-      <option name="REDIRECT_INPUT" value="false" />
+-      <option name="INPUT_FILE" value="" />
+-      <method v="2" />
+-    </configuration>
+-    <configuration name="task_14.1.6" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+-      <module name="d.harkovich_stepik_beginner" />
+-      <option name="ENV_FILES" value="" />
+-      <option name="INTERPRETER_OPTIONS" value="" />
+-      <option name="PARENT_ENVS" value="true" />
+-      <envs>
+-        <env name="PYTHONUNBUFFERED" value="1" />
+-      </envs>
+-      <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/part_14/part_14.1" />
+-      <option name="IS_MODULE_SDK" value="true" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/part_14/part_14.1/task_14.1.6.py" />
+-      <option name="PARAMETERS" value="" />
+-      <option name="SHOW_COMMAND_LINE" value="false" />
+-      <option name="EMULATE_TERMINAL" value="false" />
+-      <option name="MODULE_MODE" value="false" />
+-      <option name="REDIRECT_INPUT" value="false" />
+-      <option name="INPUT_FILE" value="" />
+-      <method v="2" />
+-    </configuration>
+-    <configuration name="task_14.1.7" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+-      <module name="d.harkovich_stepik_beginner" />
+-      <option name="ENV_FILES" value="" />
+-      <option name="INTERPRETER_OPTIONS" value="" />
+-      <option name="PARENT_ENVS" value="true" />
+-      <envs>
+-        <env name="PYTHONUNBUFFERED" value="1" />
+-      </envs>
+-      <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/part_14/part_14.1" />
+-      <option name="IS_MODULE_SDK" value="true" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/part_14/part_14.1/task_14.1.7.py" />
+-      <option name="PARAMETERS" value="" />
+-      <option name="SHOW_COMMAND_LINE" value="false" />
+-      <option name="EMULATE_TERMINAL" value="false" />
+-      <option name="MODULE_MODE" value="false" />
+-      <option name="REDIRECT_INPUT" value="false" />
+-      <option name="INPUT_FILE" value="" />
+-      <method v="2" />
+-    </configuration>
+-    <configuration name="task_14.1.9" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+-      <module name="d.harkovich_stepik_beginner" />
+-      <option name="ENV_FILES" value="" />
+-      <option name="INTERPRETER_OPTIONS" value="" />
+-      <option name="PARENT_ENVS" value="true" />
+-      <envs>
+-        <env name="PYTHONUNBUFFERED" value="1" />
+-      </envs>
+-      <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/part_14/part_14.1" />
+-      <option name="IS_MODULE_SDK" value="true" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/part_14/part_14.1/task_14.1.9.py" />
+-      <option name="PARAMETERS" value="" />
+-      <option name="SHOW_COMMAND_LINE" value="false" />
+-      <option name="EMULATE_TERMINAL" value="false" />
+-      <option name="MODULE_MODE" value="false" />
+-      <option name="REDIRECT_INPUT" value="false" />
+-      <option name="INPUT_FILE" value="" />
+-      <method v="2" />
+-    </configuration>
+-    <recent_temporary>
+-      <list>
+-        <item itemvalue="Python.task_14.1.10" />
+-        <item itemvalue="Python.task_14.1.9" />
+-        <item itemvalue="Python.task_14.1.7" />
+-        <item itemvalue="Python.task_14.1.6" />
+-        <item itemvalue="Python.task_14.1.5" />
+-      </list>
+-    </recent_temporary>
+-  </component>
+   <component name="SharedIndexes">
+     <attachedChunks>
+       <set>
+-        <option value="bundled-python-sdk-0e3be3396995-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23339.19" />
++        <option value="bundled-python-sdk-98f27166c754-ba05f1cad1b1-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.21829.153" />
+       </set>
+     </attachedChunks>
+   </component>
+Index: part_9/part_9.1/task_9.1.14.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># На вход программе подаётся одна строка с буквами русского языка.\r\n# Напишите программу, которая определяет количество гласных и согласных букв и выводит текст в следующем формате:\r\n# Количество гласных букв равно <кол-во гласных букв>\r\n# Количество согласных букв равно <кол-во согласных букв>\r\n\r\nstring = input()\r\n\r\nvowels = 'аеиоуыэюяАЕИОУЫЭЮЯ'\r\nconsonants = 'бвгджзйклмнпрстфхцчшщБВГДЖЗЙКЛМНПРСТФХЦЧШЩ'\r\ntotal_vowels = 0\r\ntotal_consonants = 0\r\n\r\nfor i in range(len(string)):\r\n    if string[i] in vowels:\r\n        total_vowels += 1\r\n    if string[i] in consonants:\r\n        total_consonants += 1\r\n\r\nprint('Количество гласных букв равно', total_vowels)\r\nprint('Количество согласных букв равно', total_consonants)\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.1/task_9.1.14.py b/part_9/part_9.1/task_9.1.14.py
+--- a/part_9/part_9.1/task_9.1.14.py	(revision 9be3e73cb1871b9c84ab37eb012e3f829674093e)
++++ b/part_9/part_9.1/task_9.1.14.py	(date 1728657596350)
+@@ -13,8 +13,8 @@
+ for i in range(len(string)):
+     if string[i] in vowels:
+         total_vowels += 1
+-    if string[i] in consonants:
++    elif string[i] in consonants: # no need to check the first conditions again
+         total_consonants += 1
+ 
+-print('Количество гласных букв равно', total_vowels)
+-print('Количество согласных букв равно', total_consonants)
++print('The number of vowels is equal to', total_vowels)
++print('The number of consonants is equal to', total_consonants)
+Index: part_9/part_9.8/task_9.8.11.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.8/task_9.8.11.py b/part_9/part_9.8/task_9.8.11.py
+new file mode 100644
+--- /dev/null	(date 1728657596362)
++++ b/part_9/part_9.8/task_9.8.11.py	(date 1728657596362)
+@@ -0,0 +1,25 @@
++# На вход программе подается последовательность строк, каждая строка на отдельной строке.
++# Концом последовательности является слово «КОНЕЦ» (без кавычек).
++# При этом само слово «КОНЕЦ» не входит в последовательность, лишь символизируя ее окончание.
++# Напишите программу, которая находит в данной последовательности максимальную и минимальную строки
++# (в лексикографическом порядке) и выводит их в следующем формате:
++# Минимальная строка ⬇️: <минимальная строка>
++# Максимальная строка ⬆️: <максимальная строка>
++
++string = input()
++
++max_string = string
++min_string = string
++
++while string != 'THE END':
++    if string < min_string:
++        min_string = string
++    if string > max_string:
++        max_string = string
++
++    string = input()
++
++
++print(f'Minimum line ⬇️: {min_string}')
++print(f'Max line ⬆️: {max_string}')
++
+Index: part_9/part_9.8/task_9.8.12.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.8/task_9.8.12.py b/part_9/part_9.8/task_9.8.12.py
+new file mode 100644
+--- /dev/null	(date 1728657596363)
++++ b/part_9/part_9.8/task_9.8.12.py	(date 1728657596363)
+@@ -0,0 +1,14 @@
++# В некотором наборе слов Сэм находит "волшебное" число по следующему алгоритму:
++# берет самую "маленькую" и самую "большую" строки, перемножает Unicode-коды последних символов этих строк и
++# возводит полученное число в квадрат. Результатом и является "волшебное" число.
++# На вход программе подаются 4 слова. Найдите "волшебное" число в этом наборе слов.
++
++string1, string2, string3, string4 = input(), input(), input(), input()
++
++max_string = max(string1, string2, string3, string4)
++min_string = min(string1, string2, string3, string4)
++max_number = ord(max_string[-1])
++min_number = ord(min_string[-1])
++print((max_number * min_number) ** 2)
++
++
+Index: part_9/part_9.8/task_9.8.13.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.8/task_9.8.13.py b/part_9/part_9.8/task_9.8.13.py
+new file mode 100644
+--- /dev/null	(date 1728657596363)
++++ b/part_9/part_9.8/task_9.8.13.py	(date 1728657596363)
+@@ -0,0 +1,18 @@
++# В школе BEEGEEK названия учебных классов необычные. Они имеют следующий формат:
++# <номер класса><буква класса>
++# где <номер класса> должен находиться в диапазоне от 0 (как и все у программистов) до 9 включительно,
++# а буквой класса могут быть все буквы в диапазоне от «А» до «П» включительно.
++# Напишите программу, которая принимает натуральное число
++# n, а далее n названий классов, каждое на новой строке.
++# Для каждого названия класса ваша программа должна выводить на отдельной строке «YES» (без кавычек),
++# если название класса корректное, или «NO» (без кавычек) в противном случае.
++
++numbers = int(input())
++letters = 'АБВГДЕЖЗИЙКЛМНОП'
++
++for i in range(numbers):
++    class_name = input()
++    if len(class_name) == 2 and class_name[0].isdigit() and class_name[1] in letters:
++        print('YES')
++    else:
++        print('NO')
+Index: part_9/part_9.3/task_9.3.9.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># На вход программе подается строка.\r\n# Напишите программу, которая меняет регистр символов, другими словами замените все строчные символы заглавными и наоборот.\r\n\r\nstring = input()\r\n\r\nprint(string.swapcase())
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.3/task_9.3.9.py b/part_9/part_9.3/task_9.3.9.py
+--- a/part_9/part_9.3/task_9.3.9.py	(revision 9be3e73cb1871b9c84ab37eb012e3f829674093e)
++++ b/part_9/part_9.3/task_9.3.9.py	(date 1728657596352)
+@@ -3,4 +3,17 @@
+ 
+ string = input()
+ 
+-print(string.swapcase())
+\ No newline at end of file
++print(string.swapcase())
++
++# via 'for'
++new_string = ''
++
++for i in string:
++    if i.islower() and i.isalpha():
++        new_string += i.upper()
++    elif i.isupper() and i.isalpha():
++        new_string += i.lower()
++    else:
++        new_string += i
++
++print(new_string)
+\ No newline at end of file
+Index: part_9/part_9.8/task_9.8.14.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.8/task_9.8.14.py b/part_9/part_9.8/task_9.8.14.py
+new file mode 100644
+--- /dev/null	(date 1728657596364)
++++ b/part_9/part_9.8/task_9.8.14.py	(date 1728657596364)
+@@ -0,0 +1,22 @@
++# На вход программе подаются 2 строки. Вам необходимо сравнить эти строки посимвольно,
++# не учитывая регистр и игнорируя все небуквенные символы.
++# Программа должна вывести «YES», если строки окажутся равны в результате такой проверки, или «NO» в противном случае.
++
++first_string = input()
++second_string = input()
++
++new_first_string = ''
++new_second_string = ''
++
++for i in first_string:
++    if i.isalpha():
++        new_first_string += i
++
++for i in second_string:
++    if i.isalpha():
++        new_second_string += i
++
++if new_first_string.lower() == new_second_string.lower():
++    print('YES')
++else:
++    print('NO')
+Index: part_9/part_9.8/task_9.8.15.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.8/task_9.8.15.py b/part_9/part_9.8/task_9.8.15.py
+new file mode 100644
+--- /dev/null	(date 1728657596364)
++++ b/part_9/part_9.8/task_9.8.15.py	(date 1728657596364)
+@@ -0,0 +1,14 @@
++# На вход программе подаются 3 различных слова.
++# Вам необходимо отсортировать эти слова по возрастанию в лексикографическом порядке
++# и вывести их на одной строке, разделяя символом пробела.
++
++word1, word2, word3 = input(), input(), input()
++
++max_word = max(word1, word2, word3)
++min_word = min(word1, word2, word3)
++
++total = word1 + word2 + word3
++delete_min = total.replace(min_word, '')
++delete_max = delete_min.replace(max_word,'')
++
++print(min_word, delete_max, max_word)
+\ No newline at end of file
+Index: part_9/part_9.8/task_9.8.16.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.8/task_9.8.16.py b/part_9/part_9.8/task_9.8.16.py
+new file mode 100644
+--- /dev/null	(date 1728657596364)
++++ b/part_9/part_9.8/task_9.8.16.py	(date 1728657596364)
+@@ -0,0 +1,29 @@
++# Все книги в домашней библиотеке Душнилы, друга Сэма, должны быть обязательно отсортированы по возрастанию:
++# сначала по фамилиям авторов, а в случае совпадения фамилий – по названиям.
++# Напишите программу, которая проверяет, верно ли отсортированы книги.
++# На вход вашей программе поступает число n, а затем – n строк, каждая строка представляет собой книгу в следующем формате:
++# <фамилия автора> <инициалы автора>, «<название книги>»
++# Программа должна вывести «YES» (без кавычек), если книги отсортированы в соответствии с пожеланиями Душнилы,
++# или «NO» (без кавычек) в противном случае.
++
++# Примечание 1. Обратите внимание, что Душнила игнорирует инициалы автора при сортировке книг.
++# Примечание 2. Гарантируется, что книги в наборе не повторяются.
++# Примечание 3. Гарантируется, что фамилия автора состоит из одного слова.
++
++number = int(input())
++
++book = input()
++book = book.replace(book[(book.find(',') - 5):(book.find(','))], '')
++
++for i in range(number - 1):
++    book_next = input()
++    book_next = book_next.replace(book_next[(book_next.find(',') - 5):(book_next.find(','))], '')
++    if book > book_next:
++        print('NO')
++        break
++    book = book_next
++else:
++    print('YES')
++
++
++
+Index: part_9/part_9.3/task_9.3.11.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># На вход программе подается строка.\r\n# Напишите программу, которая подсчитывает количество буквенных символов в нижнем регистре.\r\n\r\nstring = input()\r\nlower_case = 0\r\n\r\nfor i in range(len(string)):\r\n    if string[i] != string.upper()[i]:\r\n        lower_case += 1\r\n\r\nprint(lower_case)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.3/task_9.3.11.py b/part_9/part_9.3/task_9.3.11.py
+--- a/part_9/part_9.3/task_9.3.11.py	(revision 9be3e73cb1871b9c84ab37eb012e3f829674093e)
++++ b/part_9/part_9.3/task_9.3.11.py	(date 1728657596351)
+@@ -4,8 +4,8 @@
+ string = input()
+ lower_case = 0
+ 
+-for i in range(len(string)):
+-    if string[i] != string.upper()[i]:
++for i in string:
++    if i.islower():
+         lower_case += 1
+ 
+ print(lower_case)
+\ No newline at end of file
+Index: part_9/part_9.7/task_9.7.10.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.7/task_9.7.10.py b/part_9/part_9.7/task_9.7.10.py
+new file mode 100644
+--- /dev/null	(date 1728657596359)
++++ b/part_9/part_9.7/task_9.7.10.py	(date 1728657596359)
+@@ -0,0 +1,19 @@
++# Модератору Сэму за каждый символ его сообщений в комментариях Тимур платит в 🐝 (пчелках-coin) по следующему тарифу:
++# <код символа в таблице Unicode>×3🐝
++# А стоимость всего сообщения складывается из суммы стоимостей всех символов.
++# Сэму захотелось подсчитать, сколько 🐝 он зарабатывает за свои ответы в комментариях, и просит вас помочь ему.
++# На вход программе подается строка текста.
++# Требуется написать программу, которая находит стоимость сообщения Сэма в 🐝 и выводит текст в следующем формате:
++# Текст сообщения: '<текст сообщения Сэма>'
++# Стоимость сообщения: <стоимость сообщения Сэма>🐝
++
++string = input()
++
++total = 0
++
++for i in string:
++    total += ord(i)
++
++total = total * 3
++
++print(f"Message text: '{string}'", f'Cost of message: {total}🐝', sep='\n')
+\ No newline at end of file
+Index: part_9/part_9.7/task_9.7.11.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.7/task_9.7.11.py b/part_9/part_9.7/task_9.7.11.py
+new file mode 100644
+--- /dev/null	(date 1728657596359)
++++ b/part_9/part_9.7/task_9.7.11.py	(date 1728657596359)
+@@ -0,0 +1,35 @@
++# Как вы помните из прошлой задачи, модератору Сэму за каждый символ его сообщений в комментариях 
++# Тимур платит в 🐝 (пчелках-coin) по следующему тарифу:
++# <код символа в таблице Unicode>×3🐝
++# А стоимость всего сообщения складывается из суммы стоимостей всех символов. 
++# На этот раз Сэму захотелось схитрить и попробовать увеличить стоимость своего сообщения, 
++# заменив в нем некоторые английские буквы на русские. 
++# Как вы помните, русские буквы в таблице Unicode находятся после английских.
++# Сэм хочет заменить следующие английские буквы: eyopaxcETOPAHXCBM
++# на соответствующие им русские буквы: еуорахсЕТОРАНХСВМ
++# Тимур визуально разницу не заметит, а Сэм сможет зарабатывать больше пчелок-coin. 😊
++# На вход программе подается строка текста. 
++# Требуется написать программу, которая находит стоимость старого и нового сообщений 
++# Сэма в 🐝 и выводит текст в следующем формате:
++# Старая стоимость: <стоимость старого сообщения>🐝
++# Новая стоимость: <стоимость нового сообщения>🐝
++
++string = input()
++
++cyrrilic = 'еуорахсЕТОРАНХСВМ'
++latin = 'eyopaxcETOPAHXCBM'
++
++total_old = 0
++total_new = 0
++
++for i in string:
++    total_old += ord(i)
++    if i in latin:
++        i = cyrrilic[latin.find(i)]
++    total_new += ord(i)
++
++total_old *= 3
++total_new *= 3
++
++print(f'Old price: {total_old}🐝')
++print(f'New price: {total_new}🐝')
+\ No newline at end of file
+Index: part_9/part_9.7/task_9.7.12.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.7/task_9.7.12.py b/part_9/part_9.7/task_9.7.12.py
+new file mode 100644
+--- /dev/null	(date 1728657596360)
++++ b/part_9/part_9.7/task_9.7.12.py	(date 1728657596360)
+@@ -0,0 +1,18 @@
++# Легион Цезаря, созданный в 23 веке на основе Римской Империи не изменяет древним традициям и использует шифр Цезаря.
++# Это их и подвело, ведь данный шифр очень простой. Однако в постапокалипсисе люди плохо знают все тонкости довоенного мира,
++# поэтому ученые из НКР не могут понять, как именно нужно декодировать данные сообщения.
++# Напишите программу для декодирования этого шифра.
++
++num_shift = int(input())
++
++string = input()
++
++new_string = ''
++
++for i in string:
++    if (ord(i) - num_shift) >= ord('a'):
++        new_string += chr(ord(i) - num_shift)
++    else:
++        new_string += chr(ord(i) - num_shift + 26) # 25 - quantity of latin characters
++
++print(new_string)
+\ No newline at end of file
+Index: part_9/part_9.7/task_9.7.13.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.7/task_9.7.13.py b/part_9/part_9.7/task_9.7.13.py
+new file mode 100644
+--- /dev/null	(date 1728657596360)
++++ b/part_9/part_9.7/task_9.7.13.py	(date 1728657596360)
+@@ -0,0 +1,38 @@
++# После недавнего сбоя в операционной системе от компании «Oursoft» у Гвидо сбилась кодировка на компьютере.
++# Теперь все буквы русского алфавита отображаются в некорректном виде:
++# [u-<номер символа в таблице Unicode>]
++# Гвидо еще не научился читать символы в таком формате, поэтому просит вас написать программу,
++# которая будет "расшифровывать" для него все тексты на компьютере.
++# На вход программе подается строка текста.
++# Расшифруйте текст, заменив все конструкции [u-<номер символа в таблице Unicode>] на соответствующие буквы русского алфавита,
++# и выведите его.
++# Формат входных данных
++# На вход программе подается строка текста, в которой могут быть зашифрованы символы русского алфавита.
++# Формат выходных данных
++# Программа должна вывести строку текста, расшифровав символы русского алфавита.
++# Примечание. Будем считать, что буквы Ё нет в русском алфавите. 🤫
++
++string = input()
++
++number = ''
++letter = ''
++word = ''
++
++
++for i in string:
++    if i.isdigit():
++        number += i
++    else:
++        if number: # at the end number
++            letter = chr(int(number))
++            word += letter
++            number = ''
++        word += i
++
++
++word = word.replace('[u-', '').replace(']', '')
++
++print(word)
++
++
++
+Index: part_9/part_9.7/task_9.7.6.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.7/task_9.7.6.py b/part_9/part_9.7/task_9.7.6.py
+new file mode 100644
+--- /dev/null	(date 1728657596361)
++++ b/part_9/part_9.7/task_9.7.6.py	(date 1728657596361)
+@@ -0,0 +1,11 @@
++# На вход программе подается некоторая буква русского алфавита в верхнем регистре.
++# Найдите следующую за ней букву и выведите ее на экран.
++# Если введенная буква является последней в алфавите, то выведите текст «Дальше букв нет» (без кавычек).
++
++letter = input()
++
++if letter != 'Z':
++    print(chr(ord(letter) + 1))
++else:
++    print('There are no further letters')
++
+Index: part_9/part_9.7/task_9.7.7.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.7/task_9.7.7.py b/part_9/part_9.7/task_9.7.7.py
+new file mode 100644
+--- /dev/null	(date 1728657596361)
++++ b/part_9/part_9.7/task_9.7.7.py	(date 1728657596361)
+@@ -0,0 +1,8 @@
++# На вход программе подаются два числа a, b.
++# Напишите программу, которая для каждого кодового значения в диапазоне от a до b (включительно),
++# выводит соответствующий ему символ из таблицы символов Unicode.
++
++num_1, num_2 = int(input()), int(input())
++
++for i in range(num_1, num_2 + 1):
++    print(chr(i), end=' ')
+Index: part_9/part_9.7/task_9.7.8.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.7/task_9.7.8.py b/part_9/part_9.7/task_9.7.8.py
+new file mode 100644
+--- /dev/null	(date 1728657596361)
++++ b/part_9/part_9.7/task_9.7.8.py	(date 1728657596361)
+@@ -0,0 +1,7 @@
++# На вход программе подается строка текста.
++# Напишите программу, которая переводит каждый ее символ в соответствующий ему код из таблицы символов Unicode.
++
++string = input()
++
++for i in string:
++    print(ord(i), end= ' ')
+\ No newline at end of file
+Index: part_9/part_9.7/task_9.7.9.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.7/task_9.7.9.py b/part_9/part_9.7/task_9.7.9.py
+new file mode 100644
+--- /dev/null	(date 1728657596362)
++++ b/part_9/part_9.7/task_9.7.9.py	(date 1728657596362)
+@@ -0,0 +1,19 @@
++# Под "тяжестью" слова будем понимать сумму кодов по таблице Unicode всех символов этого слова.
++# Напишите программу, которая принимает 4 слова и находит среди них самое тяжелое слово.
++# Если самых тяжелых слов будет несколько, то программа должна вывести первое из них.
++
++weight = 0
++max_word = ''
++
++for i in range(4):
++    word = input()
++    total = 0
++    for j in word:
++        total += ord(j)
++    if total > weight:
++        weight = total
++        max_word = word
++
++print(max_word)
++
++
+Index: part_9/part_9.6/task_9.6.10.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.6/task_9.6.10.py b/part_9/part_9.6/task_9.6.10.py
+new file mode 100644
+--- /dev/null	(date 1728657596357)
++++ b/part_9/part_9.6/task_9.6.10.py	(date 1728657596357)
+@@ -0,0 +1,16 @@
++# Очень часто студенты "Поколения Python" путают понятия «сумма кубов» и «куб суммы».
++# Для того чтобы внести ясность в этот извечный математический вопрос, предлагаем вам решить следующую задачу.
++# На вход программе подаются два целых числа a и b.
++# Ваша программа должна посчитать для этих чисел сумму их кубов и куб их суммы и вывести результат вычислений в следующем формате:
++# Для чисел <число a> и <число b>:
++#   Сумма кубов: <число a>**3 + <число b>**3 = <сумма кубов a и b>
++#   Куб суммы: (<число a> + <число b>)**3 = <куб суммы a и b>
++
++a = int(input())
++b = int(input())
++sum_cubes = a**3 + b**3
++cube_sum = (a + b)**3
++
++print(f'For numbers {a} and {b}:')
++print(f'  Sum of cubes: {a}**3 + {b}**3 = {sum_cubes}')
++print(f'  Cube of the sum: ({a} + {b})**3 = {cube_sum}')
+Index: part_9/part_9.6/task_9.6.11.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.6/task_9.6.11.py b/part_9/part_9.6/task_9.6.11.py
+new file mode 100644
+--- /dev/null	(date 1728657596357)
++++ b/part_9/part_9.6/task_9.6.11.py	(date 1728657596357)
+@@ -0,0 +1,23 @@
++# Гвидо, засевший за компьютером и не ведущий активный образ жизни, «немного» поднабрал в весе.
++# Осталось всего 60 дней до лета, а хочется быть в форме. Вот Гвидо и решился на похудение.
++# Все дни до лета он пронумеровал от 1 до 60 (включительно). Перед началом похудения у Гвидо был вес 100 кг,
++# а своей целью он поставил достичь веса 88 кг (или меньше).
++# Он решил худеть на одну и ту же массу ежедневно.
++# Напишите программу, которая принимает на вход текущий день и текущий вес Гвидо.
++# Программа должна вывести фразу:
++# «Все идет по плану» (без кавычек), если Гвидо удаётся держать планку в похудении и его вес ниже либо равен тому,
++# который он запланировал на текущий день
++# «Что-то пошло не так» (без кавычек), если Гвидо не очень старается и его вес выше того, который он запланировал на текущий день
++# Также программа должна вывести информацию о номере дня похудения, текущем весе Гвидо и цели по весу на текущий день в формате:
++# #<номер дня> ДЕНЬ: ТЕКУЩИЙ ВЕС = <текущий вес Гвидо> кг, ЦЕЛЬ по ВЕСУ = <цель по весу на текущий день> кг
++
++day_loss = int(input())
++current_weight = float(input())
++goal_day = 100 - 0.2 * day_loss
++
++if abs(100 - current_weight) / day_loss <= 0.2:
++    print('Something went wrong')
++else:
++    print('Everything is going according to plan')
++
++print(f'#{day_loss} DAY: CURRENT WEIGHT = {current_weight} kg, WEIGHT GOAL = {goal_day} kg')
+\ No newline at end of file
+Index: part_9/part_9.6/task_9.6.7.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.6/task_9.6.7.py b/part_9/part_9.6/task_9.6.7.py
+new file mode 100644
+--- /dev/null	(date 1728657596358)
++++ b/part_9/part_9.6/task_9.6.7.py	(date 1728657596358)
+@@ -0,0 +1,10 @@
++# Используя метод format(), дополните приведённый код так, чтобы он вывел текст:
++# In 2010, someone paid 10k Bitcoin for two pizzas.
++
++year = 2010
++value = '10k'
++thing = 'Bitcoin'
++
++s = 'In {0}, someone paid {1} {2} for two pizzas.'.format(year, value, thing)
++
++print(s)
+\ No newline at end of file
+Index: part_9/part_9.6/task_9.6.8.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.6/task_9.6.8.py b/part_9/part_9.6/task_9.6.8.py
+new file mode 100644
+--- /dev/null	(date 1728657596358)
++++ b/part_9/part_9.6/task_9.6.8.py	(date 1728657596358)
+@@ -0,0 +1,10 @@
++# Используя f-строку, дополните приведённый код так, чтобы он вывел текст:
++# In 2010, someone paid 10K Bitcoin for two pizzas.
++
++year = 2010
++value = '10K'
++thing = 'Bitcoin'
++
++s = f'In {year}, someone paid {value} {thing} for two pizzas.'
++
++print(s)
+\ No newline at end of file
+Index: part_9/part_9.6/task_9.6.9.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.6/task_9.6.9.py b/part_9/part_9.6/task_9.6.9.py
+new file mode 100644
+--- /dev/null	(date 1728657596359)
++++ b/part_9/part_9.6/task_9.6.9.py	(date 1728657596359)
+@@ -0,0 +1,15 @@
++# Вследствие кибератаки на банк «Разбогатеем вместе» сломался алгоритм,
++# выводящий курсы валют для определённой даты в мобильном приложении.
++# Технический отдел банка просит вас исправить ситуацию и наладить вывод.
++# На вход программе подаются следующие значения:
++# дата (в формате ДД-ММ-ГГГГ)
++# курс доллара (сколько российских рублей стоит 1 доллар)
++# курс юаня (сколько российских рублей стоит 1 юань)
++# Напишите программу, которая выводит строку, показывающую, сколько российских рублей стоит 1 доллар и 1 юань на указанную дату в формате:
++# На <дата>: 1$ = <курс доллара>₽, 1¥ = <курс юаня>₽
++
++date = input()
++dollar_rate = float(input())
++yuan_rate = float(input())
++
++print(f'На {date}: 1$ = {dollar_rate:.4f}₽, 1¥ = {yuan_rate:.4f}₽')
+\ No newline at end of file
+Index: part_9/part_9.5/task_9.5.10.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.5/task_9.5.10.py b/part_9/part_9.5/task_9.5.10.py
+new file mode 100644
+--- /dev/null	(date 1728657596356)
++++ b/part_9/part_9.5/task_9.5.10.py	(date 1728657596356)
+@@ -0,0 +1,37 @@
++# В службе по дорожному движению решили оптимизировать процесс создания автомобильных номеров:
++# вместо человека генерацию автомобильных номеров поручили некоторой GPT (модели машинного обучения).
++# Как мы знаем, искусственный интеллект ещё сыроват и делает много ошибок, поэтому его результаты следует тщательно проверять.
++
++# Напишите программу, которая принимает на вход строку и проверяет, является ли эта строка корректным автомобильным номером.
++# Программа должна вывести «YES» (без кавычек), если искусственный интеллект справился со своей задачей,
++# или «NO» (без кавычек) в противном случае. В нашей задаче корректным автомобильным номером будем считать следующие форматы:
++
++# <БУКВА><ЦИФРА><ЦИФРА><ЦИФРА><БУКВА><БУКВА>_<ЦИФРА><ЦИФРА>
++# <БУКВА><ЦИФРА><ЦИФРА><ЦИФРА><БУКВА><БУКВА>_<ЦИФРА><ЦИФРА><ЦИФРА>
++
++# где <ЦИФРА> – это любая цифра, а <БУКВА> – это одна из букв кириллицы АВЕКМНОРСТУХ
++
++auto_number = input()
++
++letter = 'АВЕКМНОРСТУХ'
++
++if (len(auto_number) == 9 and
++        (auto_number[0] in letter) and
++        (auto_number[1:4].isdigit()) and
++        (auto_number[4] in letter) and
++        (auto_number[5] in letter) and
++        (auto_number[6] == '_') and
++        ((auto_number[7:9]).isdigit())):
++    print('YES')
++elif (len(auto_number) == 10 and
++        (auto_number[0] in letter) and
++        (auto_number[1:4].isdigit()) and
++        (auto_number[4] in letter) and
++        (auto_number[5] in letter) and
++        (auto_number[6] == '_') and
++        ((auto_number[7:10]).isdigit())):
++    print('YES')
++else:
++    print('NO')
++
++
+Index: part_9/part_9.5/task_9.5.11.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.5/task_9.5.11.py b/part_9/part_9.5/task_9.5.11.py
+new file mode 100644
+--- /dev/null	(date 1728657596356)
++++ b/part_9/part_9.5/task_9.5.11.py	(date 1728657596356)
+@@ -0,0 +1,33 @@
++# Во время собеседования вам предложили решить задачу на валидацию имени пользователя.
++# Пользователь пытается создать никнейм для своего аккаунта в соцсети Y.
++# Правила для корректного никнейма в соцсети Y следующие:
++# никнейм должен начинаться с символа @
++# никнейм должен содержать от
++# 5 до 15 (включительно) символов (включая первый символ @)
++# никнейм должен содержать только строчные буквы и цифры (помимо первого символа @)
++# Напишите программу, которая выводит «Correct» (без кавычек),
++# если никнейм соответствует всем вышеприведенным правилам, или «Incorrect» (без кавычек) в противном случае.
++
++nickname = input()
++
++if (nickname[0] == '@' and
++    5 <= len(nickname) <= 15 and
++    all(c.islower() or c.isdigit() for c in nickname[1:])):
++    print('Correct')
++else:
++    print('Incorrect')
++
++
++# better decision
++
++s = input()
++
++if (
++    s.startswith('@')
++    and 5 <= len(s) <= 15
++    and s[1:].isalnum()
++    and s == s.lower()
++):
++    print('Correct')
++else:
++    print('Incorrect')
+\ No newline at end of file
+Index: part_9/part_9.5/task_9.5.9.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.5/task_9.5.9.py b/part_9/part_9.5/task_9.5.9.py
+new file mode 100644
+--- /dev/null	(date 1728657596356)
++++ b/part_9/part_9.5/task_9.5.9.py	(date 1728657596356)
+@@ -0,0 +1,18 @@
++# На платформе Stepik пользователи оставляют комментарии, но не все из них соответствуют правилам.
++# Так, например, модератор Сэм считает неуместными комментарии те,
++# которые представляют собой пустую строку или состоят только из пробелов.
++# Подобные комментарии он удаляет – нечего засорять курс бесполезным материалом!
++# Ваша задача – написать программу, которая поможет Сэму проверять комментарии.
++# Программа должна принимать на вход натуральное число n, а затем n строк, представляющих тексты комментариев.
++# Для каждого комментария ваша программа должна выводить номер этого комментария (начиная с 1),
++# затем двоеточие (:), затем через пробел его текст или сообщение «COMMENT SHOULD BE DELETED» (без кавычек),
++# если комментарий должен быть удалён Сэмом.
++
++n = int(input())
++
++for i in range(1, n + 1):
++    comment = input()
++    if comment.isspace() or comment == '':
++        comment = 'COMMENT SHOULD BE DELETED'
++
++    print(i, ': ', comment, sep='')
+Index: part_9/part_9.4/task_9.4.10.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.4/task_9.4.10.py b/part_9/part_9.4/task_9.4.10.py
+new file mode 100644
+--- /dev/null	(date 1728657596353)
++++ b/part_9/part_9.4/task_9.4.10.py	(date 1728657596353)
+@@ -0,0 +1,14 @@
++# Джим Хоппер с помощью радиоприемника пытается получить сообщение Оди.
++# На приёмник ему поступает n различных последовательностей кода Морзе.
++# Декодировав их, он получает последовательности из цифр и букв строчного латинского алфавита.
++# При этом только в сообщениях Оди содержится число 11, причём минимум 3 раза.
++# Помогите определить Джиму количество сообщений от Оди.
++
++n = int(input()) # message number
++total_messages = 0
++
++for i in range(n):
++    string = input()
++    if string.count('11') >= 3:
++        total_messages += 1
++print(total_messages)
+Index: part_9/part_9.4/task_9.4.11.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.4/task_9.4.11.py b/part_9/part_9.4/task_9.4.11.py
+new file mode 100644
+--- /dev/null	(date 1728657596353)
++++ b/part_9/part_9.4/task_9.4.11.py	(date 1728657596353)
+@@ -0,0 +1,21 @@
++# На вход программе подается строка текста.
++# Напишите программу, которая подсчитывает количество цифр в данной строке.
++
++string = input()
++numbers = '0123456789'
++total = 0
++
++for i in range(len(string)):
++    if string[i] in numbers:
++        total += 1
++print(total)
++
++# more interesting decision
++
++text = input()
++cnt = 0
++
++for i in range(10):
++    cnt += text.count(str(i))
++
++print(cnt)
+\ No newline at end of file
+Index: part_9/part_9.4/task_9.4.12.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.4/task_9.4.12.py b/part_9/part_9.4/task_9.4.12.py
+new file mode 100644
+--- /dev/null	(date 1728657596353)
++++ b/part_9/part_9.4/task_9.4.12.py	(date 1728657596353)
+@@ -0,0 +1,9 @@
++# На вход программе подается строка текста.
++# Напишите программу, которая проверяет, что строка заканчивается подстрокой .com или .ru.
++
++string = input()
++
++if string.endswith('.com') or string.endswith('.ru'):
++    print('YES')
++else:
++    print('NO')
+Index: part_9/part_9.4/task_9.4.13.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.4/task_9.4.13.py b/part_9/part_9.4/task_9.4.13.py
+new file mode 100644
+--- /dev/null	(date 1728657596354)
++++ b/part_9/part_9.4/task_9.4.13.py	(date 1728657596354)
+@@ -0,0 +1,14 @@
++# На вход программе подаётся строка текста.
++# Напишите программу, которая выводит на экран символ, который появляется наиболее часто.
++
++string= input()
++
++total = 0
++total_symbol = ''
++
++for i in string:
++    if string.count(i) >= total:
++        total = string.count(i)
++        total_symbol = i
++
++print(total_symbol)
+Index: part_9/part_9.4/task_9.4.14.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.4/task_9.4.14.py b/part_9/part_9.4/task_9.4.14.py
+new file mode 100644
+--- /dev/null	(date 1728657596354)
++++ b/part_9/part_9.4/task_9.4.14.py	(date 1728657596354)
+@@ -0,0 +1,15 @@
++# На вход программе подаётся строка текста.
++# Если в этой строке буква «f» встречается только один раз, выведите её индекс.
++# Если она встречается два и более раза,
++# выведите индексы её первого и последнего вхождения на одной строке, разделённые символом пробела.
++# Если буква «f» в данной строке не встречается, следует вывести «NO».
++
++string = input()
++
++if string.count('f') == 1:
++    print(string.find('f'))
++elif string.count('f') >= 2:
++    print(string.find('f'), string.rfind('f'))
++else:
++    print('NO')
++
+Index: part_9/part_9.4/task_9.4.15.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.4/task_9.4.15.py b/part_9/part_9.4/task_9.4.15.py
+new file mode 100644
+--- /dev/null	(date 1728657596354)
++++ b/part_9/part_9.4/task_9.4.15.py	(date 1728657596354)
+@@ -0,0 +1,7 @@
++# На вход программе подаётся строка текста, в которой буква «h» встречается минимум два раза.
++# Напишите программу, которая удаляет из этой строки первое и последнее вхождение буквы «h»,
++# а также все символы, находящиеся между ними.
++
++string = input()
++
++print(string[:string.find('h')] + string[string.rfind('h') + 1:], sep='')
+\ No newline at end of file
+Index: part_9/part_9.4/task_9.4.8.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.4/task_9.4.8.py b/part_9/part_9.4/task_9.4.8.py
+new file mode 100644
+--- /dev/null	(date 1728657596355)
++++ b/part_9/part_9.4/task_9.4.8.py	(date 1728657596355)
+@@ -0,0 +1,8 @@
++# На вход программе подаётся строка текста, состоящая из слов, разделённых ровно одним пробелом.
++# Напишите программу, которая подсчитывает количество слов в ней.
++
++string = input()
++
++space = string.count(' ')
++
++print(space + 1)
+\ No newline at end of file
+Index: part_9/part_9.4/task_9.4.9.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_9/part_9.4/task_9.4.9.py b/part_9/part_9.4/task_9.4.9.py
+new file mode 100644
+--- /dev/null	(date 1728657596355)
++++ b/part_9/part_9.4/task_9.4.9.py	(date 1728657596355)
+@@ -0,0 +1,9 @@
++# На вход программе подается строка генетического кода, состоящая из букв А (аденин), Г (гуанин), Ц (цитозин), Т (тимин).
++# Напишите программу, которая подсчитывает сколько аденина, гуанина, цитозина и тимина входит в данную строку генетического кода.
++
++lower_case = input().lower()
++
++print('Adenine:', lower_case.count('а'))
++print('Guanine:', lower_case.count('г'))
++print('Cytosine:', lower_case.count('ц'))
++print('Timin:', lower_case.count('т'))
+\ No newline at end of file
+Index: part_8/task_8.1.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># На обработку поступает натуральное число.\r\n# Нужно написать программу, которая выводит на экран сумму четных цифр этого числа или 0,\r\n# если четных цифр в записи нет. Программист торопился и написал программу неправильно.\r\n\r\nn = int(input())\r\ntotal = 0\r\n\r\nwhile n != 0:\r\n    first_num = n % 10 # check first number\r\n    if first_num % 2 == 0 or first_num == 0: # check division by 2 and 0 value\r\n        total += first_num\r\n    n //= 10\r\nprint(total)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_8/task_8.1.py b/part_8/task_8.1.py
+--- a/part_8/task_8.1.py	(revision 9be3e73cb1871b9c84ab37eb012e3f829674093e)
++++ b/part_8/task_8.1.py	(date 1728657596345)
+@@ -2,6 +2,12 @@
+ # Нужно написать программу, которая выводит на экран сумму четных цифр этого числа или 0,
+ # если четных цифр в записи нет. Программист торопился и написал программу неправильно.
+ 
++# Найдите все ошибки в этой программе (их может быть одна или несколько).
++# Известно, что каждая ошибка затрагивает только одну строку и может быть исправлена без изменения других строк.
++
++# Примечание. Обратите внимание, что требуется найти ошибки в имеющейся программе,
++# а не написать свою, возможно, использующую другой алгоритм решения.
++
+ n = int(input())
+ total = 0
+ 
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+--- /dev/null	(date 1728657596323)
++++ b/.gitignore	(date 1728657596323)
+@@ -0,0 +1,1 @@
++.idea/
+\ No newline at end of file
+Index: part_1-7/task_7.9.7.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># На вход программе подается два натуральных числа a и b (a < b).\r\n# Напишите программу, которая находит все простые числа от a до b включительно\r\n\r\na, b = int(input()), int(input())\r\n\r\nfor i in range(a, b + 1):\r\n    flag = True\r\n    if i < 2:\r\n        flag = False\r\n    else:\r\n        for j in range(2, i):\r\n            if i % j == 0:\r\n                flag = False\r\n                break\r\n    if flag:\r\n        print(i)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_1-7/task_7.9.7.py b/part_1-7/task_7.9.7.py
+--- a/part_1-7/task_7.9.7.py	(revision 9be3e73cb1871b9c84ab37eb012e3f829674093e)
++++ b/part_1-7/task_7.9.7.py	(date 1728657596324)
+@@ -1,9 +1,9 @@
+ # На вход программе подается два натуральных числа a и b (a < b).
+ # Напишите программу, которая находит все простые числа от a до b включительно
+ 
+-a, b = int(input()), int(input())
++num_1, num_2 = int(input()), int(input())
+ 
+-for i in range(a, b + 1):
++for i in range(num_1, num_2 + 1):
+     flag = True
+     if i < 2:
+         flag = False
+@@ -13,4 +13,18 @@
+                 flag = False
+                 break
+     if flag:
++        print(i)
++
++
++# the second variant without flags:
++num_1, num_2 = int(input()), int(input())
++
++
++for i in range(num_1, num_2 + 1):
++    if i == 1:
++        continue
++    for j in range(2, i):
++        if i % j == 0:
++            break
++    else:
+         print(i)
+\ No newline at end of file
+Index: part_11/part_11.1/task_11.1.8.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.1/task_11.1.8.py b/part_11/part_11.1/task_11.1.8.py
+new file mode 100644
+--- /dev/null	(date 1728657596329)
++++ b/part_11/part_11.1/task_11.1.8.py	(date 1728657596329)
+@@ -0,0 +1,6 @@
++# На вход программе подается одно число n.
++# Напишите программу, которая выводит список [1, 2, 3, ..., n].
++
++number = int(input())
++
++print(list(range(1, number + 1)))
+\ No newline at end of file
+Index: part_8/task_8.2.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># На обработку поступает последовательность из 8 целых чисел.\r\n# Известно, что вводимые числа по абсолютной величине не превышают 10**12\r\n# Нужно написать программу, которая выводит на экран количество делящихся нацело на 4 чисел\r\n# в исходной последовательности и максимальное делящееся нацело на 4.\r\n# Если делящихся нацело на 4 чисел нет,\r\n# на экран требуется вывести «NO». Программист торопился и написал программу неправильно.\r\n\r\n\r\nn = 8\r\ncount = 0\r\nmaximum = -10**12\r\nfor i in range(n):\r\n    num = int(input())\r\n    if num % 4 == 0:\r\n        count += 1\r\n        if num > maximum:\r\n            maximum = num\r\nif count > 0:\r\n    print(count)\r\n    print(maximum)\r\nelse:\r\n    print('NO')
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_8/task_8.2.py b/part_8/task_8.2.py
+--- a/part_8/task_8.2.py	(revision 9be3e73cb1871b9c84ab37eb012e3f829674093e)
++++ b/part_8/task_8.2.py	(date 1728657596346)
+@@ -5,6 +5,11 @@
+ # Если делящихся нацело на 4 чисел нет,
+ # на экран требуется вывести «NO». Программист торопился и написал программу неправильно.
+ 
++# Найдите все ошибки в этой программе (их может быть одна или несколько).
++# Известно, что каждая ошибка затрагивает только одну строку и может быть исправлена без изменения других строк.
++
++# Примечание. Обратите внимание, что требуется найти ошибки в имеющейся программе,
++# а не написать свою, возможно, использующую другой алгоритм решения.
+ 
+ n = 8
+ count = 0
+Index: part_11/part_11.1/task_11.1.9.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.1/task_11.1.9.py b/part_11/part_11.1/task_11.1.9.py
+new file mode 100644
+--- /dev/null	(date 1728657596329)
++++ b/part_11/part_11.1/task_11.1.9.py	(date 1728657596329)
+@@ -0,0 +1,12 @@
++# На вход программе подается одно число n.
++# Напишите программу, которая выводит список, состоящий из n букв английского алфавита
++# ['a', 'b', 'c', ...] в нижнем регистре.
++
++numbers = int(input())
++
++alpabet = []
++
++for i in range(97, 123):
++    alpabet += chr(i)
++
++print(alpabet[:numbers])
+\ No newline at end of file
+Index: part_11/part_11.2/task_11.2.2.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.2/task_11.2.2.py b/part_11/part_11.2/task_11.2.2.py
+new file mode 100644
+--- /dev/null	(date 1728657596330)
++++ b/part_11/part_11.2/task_11.2.2.py	(date 1728657596330)
+@@ -0,0 +1,5 @@
++# Дополните приведенный код, используя индексатор, так чтобы он вывел 17-ый (по порядку) элемент списка primes
++
++primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71]
++
++print(primes[16])
+\ No newline at end of file
+Index: part_11/part_11.2/task_11.2.3.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.2/task_11.2.3.py b/part_11/part_11.2/task_11.2.3.py
+new file mode 100644
+--- /dev/null	(date 1728657596330)
++++ b/part_11/part_11.2/task_11.2.3.py	(date 1728657596330)
+@@ -0,0 +1,5 @@
++# Дополните приведенный код, используя индексатор, так чтобы он вывел последний элемент списка primes
++
++primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71]
++
++print(primes[-1])
+\ No newline at end of file
+Index: part_11/part_11.2/task_11.2.4.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.2/task_11.2.4.py b/part_11/part_11.2/task_11.2.4.py
+new file mode 100644
+--- /dev/null	(date 1728657596330)
++++ b/part_11/part_11.2/task_11.2.4.py	(date 1728657596330)
+@@ -0,0 +1,6 @@
++# Дополните приведенный код, используя срезы, так чтобы он вывел первые 6 элементов списка primes.
++# Примечание. Результатом вывода должна быть строка [2, 3, 5, 7, 11, 13]
++
++primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71]
++
++print(primes[:6])
+\ No newline at end of file
+Index: part_11/part_11.2/task_11.2.5.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.2/task_11.2.5.py b/part_11/part_11.2/task_11.2.5.py
+new file mode 100644
+--- /dev/null	(date 1728657596331)
++++ b/part_11/part_11.2/task_11.2.5.py	(date 1728657596331)
+@@ -0,0 +1,5 @@
++# Дополните приведенный код, так чтобы он вывел сумму минимального и максимального элементов списка numbers
++
++numbers = [12.5, 3.1415, 2.718, 9.8, 1.414, 1.1618, 1.324]
++
++print(min(numbers) + max(numbers))
+\ No newline at end of file
+Index: part_11/part_11.2/task_11.2.6.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.2/task_11.2.6.py b/part_11/part_11.2/task_11.2.6.py
+new file mode 100644
+--- /dev/null	(date 1728657596331)
++++ b/part_11/part_11.2/task_11.2.6.py	(date 1728657596331)
+@@ -0,0 +1,6 @@
++# Дополните приведенный код так, чтобы он вывел среднее арифметическое элементов списка evens
++
++evens = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
++average = sum(evens) / len(evens)
++
++print(average)
+\ No newline at end of file
+Index: part_11/part_11.2/task_11.2.7.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.2/task_11.2.7.py b/part_11/part_11.2/task_11.2.7.py
+new file mode 100644
+--- /dev/null	(date 1728657596331)
++++ b/part_11/part_11.2/task_11.2.7.py	(date 1728657596331)
+@@ -0,0 +1,10 @@
++# Дополните приведенный код так, чтобы элемент списка имеющий значение Green заменился на значение Зеленый,
++# а элемент Violet на Фиолетовый. Далее необходимо вывести полученный список.
++
++rainbow = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet']
++
++rainbow[3] = 'Зеленый'
++rainbow[-1] = 'Фиолетовый'
++
++
++print(rainbow)
+\ No newline at end of file
+Index: part_11/part_11.2/task_11.2.8.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.2/task_11.2.8.py b/part_11/part_11.2/task_11.2.8.py
+new file mode 100644
+--- /dev/null	(date 1728657596332)
++++ b/part_11/part_11.2/task_11.2.8.py	(date 1728657596332)
+@@ -0,0 +1,5 @@
++# Дополните приведенный код так, чтобы он вывел "перевёрнутый" список languages (т.е. элементы будут идти в обратном порядке).
++
++languages = ['Chinese', 'Spanish', 'English', 'Hindi', 'Arabic', 'Bengali', 'Portuguese', 'Russian', 'Japanese', 'Lahnda']
++
++print(languages[::-1])
+\ No newline at end of file
+Index: part_11/part_11.2/task_11.2.9.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.2/task_11.2.9.py b/part_11/part_11.2/task_11.2.9.py
+new file mode 100644
+--- /dev/null	(date 1728657596332)
++++ b/part_11/part_11.2/task_11.2.9.py	(date 1728657596332)
+@@ -0,0 +1,9 @@
++# Дополните приведенный код, используя операторы конкатенации (+) и умножения списка на число (*),
++# так, чтобы он вывел следующий список:
++# [1, 2, 3, 1, 2, 3, 6, 6, 6, 6, 6, 6, 6, 6, 6, 7, 8, 9, 10, 11, 12, 13]
++
++numbers1 = [1, 2, 3]
++numbers2 = [6]
++numbers3 = [7, 8, 9, 10, 11, 12, 13]
++
++print(numbers1 * 2 + numbers2 * 9 + numbers3)
+\ No newline at end of file
+Index: part_11/part_11.3/task_11.3.10.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.3/task_11.3.10.py b/part_11/part_11.3/task_11.3.10.py
+new file mode 100644
+--- /dev/null	(date 1728657596333)
++++ b/part_11/part_11.3/task_11.3.10.py	(date 1728657596333)
+@@ -0,0 +1,11 @@
++# На вход программе подается натуральное число n.
++# Напишите программу, которая создает список, состоящий из делителей введенного числа.
++
++number = int(input())
++list_divider = []
++
++for i in range(1, number + 1):
++    if number % i == 0:
++        list_divider.append(i)
++
++print(list_divider)
+Index: part_11/part_11.3/task_11.3.11.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.3/task_11.3.11.py b/part_11/part_11.3/task_11.3.11.py
+new file mode 100644
+--- /dev/null	(date 1728657596333)
++++ b/part_11/part_11.3/task_11.3.11.py	(date 1728657596333)
+@@ -0,0 +1,16 @@
++# На вход программе подается натуральное число n, где n≥2. Затем поступают n целых чисел.
++# Напишите программу, которая создает из указанных чисел список, состоящий из сумм соседних чисел (0 и 1, 1 и 2, 2 и 3 и т.д)
++number = int(input())
++
++list_number = []
++
++for i in range(number):
++    digits = int(input())
++    list_number.append(digits)
++
++sum_list_number = []
++
++for j in range(len(list_number) - 1):
++    sum_list_number.append(list_number[j] + list_number[j + 1])
++
++print(sum_list_number)
+\ No newline at end of file
+Index: part_11/part_11.3/task_11.3.12.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.3/task_11.3.12.py b/part_11/part_11.3/task_11.3.12.py
+new file mode 100644
+--- /dev/null	(date 1728657596333)
++++ b/part_11/part_11.3/task_11.3.12.py	(date 1728657596333)
+@@ -0,0 +1,14 @@
++# На вход программе подается натуральное число n, а затем n целых чисел.
++# Напишите программу, которая создает из указанных чисел список,
++# затем удаляет все элементы стоящие по нечетным индексам, а затем выводит полученный список.
++
++number = int(input())
++list_digits = []
++
++for i in range(number):
++    digits = int(input())
++    list_digits.append(digits)
++
++del list_digits[1::2]
++
++print(list_digits)
+\ No newline at end of file
+Index: part_11/part_11.3/task_11.3.13.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.3/task_11.3.13.py b/part_11/part_11.3/task_11.3.13.py
+new file mode 100644
+--- /dev/null	(date 1728657596334)
++++ b/part_11/part_11.3/task_11.3.13.py	(date 1728657596334)
+@@ -0,0 +1,17 @@
++# На вход программе подается натуральное число n и n строк, а затем число k.
++# Напишите программу, которая выводит k-ую букву из введенных строк на одной строке без пробелов.
++
++number = int(input())
++list_string = []
++
++for _ in range(number):
++    list_string.append(input())
++
++k_index = int(input())
++
++for j in list_string:
++    if k_index <= len(j):
++        print(j[k_index - 1], end='')
++
++
++
+Index: part_11/part_11.3/task_11.3.14.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.3/task_11.3.14.py b/part_11/part_11.3/task_11.3.14.py
+new file mode 100644
+--- /dev/null	(date 1728657596334)
++++ b/part_11/part_11.3/task_11.3.14.py	(date 1728657596334)
+@@ -0,0 +1,10 @@
++# На вход программе подается натуральное число n, а затем n строк.
++# Напишите программу, которая создает список из символов всех строк, а затем выводит его.
++
++number = int(input())
++list_string = []
++
++for i in range(number):
++    list_string.extend(input())
++
++print(list_string)
+\ No newline at end of file
+Index: part_11/part_11.3/task_11.3.6.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/part_11/part_11.3/task_11.3.6.py b/part_11/part_11.3/task_11.3.6.py
+new file mode 100644
+--- /dev/null	(date 1728657596335)
++++ b/part_11/part_11.3/task_11.3.6.py	(date 1728657596335)
+@@ -0,0 +1,22 @@
++# Дополните приведенный код, чтобы он:
++# Вывел длину списка;
++# Вывел последний элемент списка;
++# Вывел список в обратном порядке (вспоминаем срезы);
++# Вывел YES, если список содержит числа 5 и 17, и NO в противном случае;
++# Вывел список с удаленными первым и последним элементами.
++
++numbers = [2, 6, 3, 14, 10, 4, 11, 16, 12, 5, 4, 16, 1, 0, 8, 16, 10, 10, 8, 5, 1, 11, 10, 10, 12, 0, 0, 6, 14, 8, 2, 12, 14, 5, 6, 12, 1, 2, 10, 14, 9, 1, 15, 1, 2, 14, 16, 6, 7, 5]
++
++print(len(numbers))
++print(numbers[-1])
++print(numbers[::-1])
++
++if 15 in numbers and 17 in numbers:
++    print('YES')
++else:
++    print('NO')
++
++del numbers[0]
++del numbers[-1]
++
++print(numbers)
+\ No newline at end of file

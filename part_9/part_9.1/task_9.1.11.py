@@ -6,7 +6,7 @@ string = input()
 
 for c in range(len(string)):
     if string[c] in '0123456789':
-        print('digit')
+        print('Цифра')
         break
 else:
-    print('no digits')
+    print('Цифр нет')

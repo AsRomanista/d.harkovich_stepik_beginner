@@ -13,8 +13,8 @@ total_consonants = 0
 for i in range(len(string)):
     if string[i] in vowels:
         total_vowels += 1
-    elif string[i] in consonants: # no need to check the first conditions again
+    if string[i] in consonants:
         total_consonants += 1
 
-print('The number of vowels is equal to', total_vowels)
-print('The number of consonants is equal to', total_consonants)
+print('Количество гласных букв равно', total_vowels)
+print('Количество согласных букв равно', total_consonants)

@@ -4,11 +4,6 @@
 string = input()
 total = 0
 
-# for i in range(len(string)):
-#     total += int(string[i])
-# print(total)
-
-for i in string:
-    total += int(i)
+for i in range(len(string)):
+    total += int(string[i])
 print(total)
-
