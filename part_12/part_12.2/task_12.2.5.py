@@ -4,5 +4,6 @@
 string = input().split()
 
 list_max = [len(digit) for digit in string]
+print(max(list_max)) # maximum line length
 
-print(max(list_max))
+print(max(string, key=len)) # the longest line
