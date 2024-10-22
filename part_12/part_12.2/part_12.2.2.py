@@ -7,6 +7,4 @@
 string1 = input().split()
 string2 = input().split()
 
-string3 = [int(string1[i]) + int(string2[i]) for i in range(len(string1))]
-
-print(*string3)
+print(*[int(string1[i]) + int(string2[i]) for i in range(len(string1))])

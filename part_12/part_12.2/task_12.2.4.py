@@ -7,13 +7,11 @@
 
 string = input().split('-')
 
-if string[0] == '7':
-    del string[0]
+length = [len(i) for i in string]
 
-if len(string) == 3 and \
-        string[0].isdigit() and len(string[0]) == 3 and \
-        string[1].isdigit() and len(string[1]) == 3 and \
-        string[2].isdigit() and len(string[2]) == 4:
+if length == [3, 3, 4] and ''.join(string).isdigit():
+    print('YES')
+elif length == [1, 3, 3, 4] and ''.join(string).isdigit() and string[0] == '7':
     print('YES')
 else:
     print('NO')
