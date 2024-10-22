@@ -2,12 +2,12 @@
 # и возвращает количество дней в данном месяце.
 
 def get_days(month):
-    if month in [1, 3, 5, 7, 8, 10, 12]:
-        result = 31
+    if month in [2]:
+        result = 28
     elif month in [4, 6, 9, 11]:
         result = 30
-    elif month == 2:
-        result = 28
+    else:
+        result = 31
     return result
 
 

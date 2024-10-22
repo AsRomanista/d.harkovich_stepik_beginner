@@ -3,8 +3,7 @@
 # состоящих из целых чисел, и объединяет их в один отсортированный список.
 
 def merge(list1, list2):
-    result = sorted(list1 + list2)
-    return result
+    return sorted(list1 + list2)
 
 numbers1 = [int(c) for c in input().split()]
 numbers2 = [int(c) for c in input().split()]

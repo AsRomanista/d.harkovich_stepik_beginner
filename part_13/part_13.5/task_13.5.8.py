@@ -9,10 +9,7 @@
 
 def is_palindrome(text):
     no_spec = [symbols.lower() for symbols in text if symbols.isalpha() or symbols.isdigit()]
-    if no_spec == no_spec[::-1]:
-        return True
-    else:
-        return False
+    return no_spec == no_spec[::-1]
 
 def is_prime(num):
     if num <= 1:
@@ -23,21 +20,16 @@ def is_prime(num):
     return True
 
 def is_even(num):
-    if num % 2 == 0:
-        return True
-    else:
-        return False
+    return num % 2 == 0
 
 
 def is_valid_password(password):
     list_password = password.split(':')
-    if len(list_password) == 3:
-        if is_palindrome(list_password[0]) and is_prime(int(list_password[1])) and is_even(int(list_password[2])):
-            return True
-        else:
-            return False
-    else:
+    if len(list_password) != 3:
         return False
+    return is_palindrome(list_password[0]) and \
+        is_prime(int(list_password[1])) and \
+        is_even(int(list_password[2]))
 
 psw = input()
 
