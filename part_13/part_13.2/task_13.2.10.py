@@ -2,10 +2,8 @@
 # которая принимает одно натуральное число num и выводит на печать сумму его цифр.
 
 def print_digit_sum(num):
-    total = 0
-    for i in str(num):
-        total += int(i)
-    print(total)
+    digit_sum = sum(int(i) for i in str(num))
+    print(digit_sum)
 
 n = int(input())
 

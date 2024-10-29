@@ -3,7 +3,7 @@
 # и False в противном случае.
 
 def is_palindrome(text):
-    no_spec = [symbols.lower() for symbols in text if symbols.isalpha() or symbols.isdigit()]
+    no_spec = [symbols.lower() for symbols in text if symbols.isalnum()]
     return no_spec == no_spec[::-1]
 
 txt = input()

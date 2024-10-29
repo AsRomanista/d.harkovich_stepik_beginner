@@ -12,10 +12,7 @@ def is_correct_bracket(text):
             count -= 1
             if count < 0:
                 return False
-    if count != 0:
-        return False
-    else:
-        return True
+    return count == 0
 
 txt = input()
 

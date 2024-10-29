@@ -3,11 +3,11 @@
 
 def convert_to_python_case(text):
     snake_text = ''
-    for i in range(len(text)):
-        if text[i] == text[i].upper() and text[i].isalpha():
-            snake_text += ('_' + text[i])
+    for i in text:
+        if i.isupper():
+            snake_text += ('_' + i)
         else:
-            snake_text += text[i]
+            snake_text += i
     return snake_text[1:].lower()
 
 txt = input()

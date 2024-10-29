@@ -9,9 +9,9 @@
 
 def is_password_good(password):
     return len(password) >= 8 \
-        and any(True for c in password if c.isdigit()) \
-        and any(True for c in password if c.islower()) \
-        and any(True for c in password if c.isupper())
+        and any(c.isdigit() for c in password) \
+        and any(c.islower() for c in password) \
+        and any(c.isupper() for c in password)
 
 txt = input()
 

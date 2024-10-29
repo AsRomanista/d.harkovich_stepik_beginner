@@ -5,18 +5,14 @@
 
 def is_one_away(word1, word2):
     count_dif = 0
-    if len(word1) == len(word2):
-        for i in range(len(word1)):
-            if word1[i] != word2[i]:
-                count_dif += 1
-        return count_dif == 1
-
-    return False
+    if len(word1) != len(word2):
+        return False
+    else:
+        return sum(1 for i in range(len(word1)) if word1[i] != word2[i]) == 1
 
 txt1 = input()
 txt2 = input()
 
 print(is_one_away(txt1, txt2))
-
 
 
