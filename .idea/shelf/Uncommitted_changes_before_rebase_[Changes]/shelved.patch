@@ -1,0 +1,69 @@
+Index: course_2/part_1/part_1.2/task_1.2.9.py
+===================================================================
+diff --git a/course_2/part_1/part_1.2/task_1.2.9.py b/course_2/part_1/part_1.2/task_1.2.9.py
+deleted file mode 100644
+--- a/course_2/part_1/part_1.2/task_1.2.9.py	(revision 3a2d5dae5a01c73ecf809a7882699f28df665d9c)
++++ /dev/null	(revision 3a2d5dae5a01c73ecf809a7882699f28df665d9c)
+@@ -1,16 +0,0 @@
+-# Реализуйте программу, которая будет вычислять количество различных объектов в списке.
+-# Два объекта a и b считаются различными, если a is b равно False.
+-# Вашей программе доступна переменная с названием objects, которая ссылается на список, содержащий не более 100 объектов.
+-# Выведите количество различных объектов в этом списке.
+-
+-ans = 0
+-objects = [1, 2, 1, 2, 3]
+-unique_object = []
+-
+-
+-for obj in objects: # доступная переменная objects
+-    if obj not in unique_object:
+-        unique_object.append(obj)
+-        ans += 1
+-
+-print(ans)
+Index: course_2/part_1/part_1.1/task_1.1.9.py
+===================================================================
+diff --git a/course_2/part_1/part_1.1/task_1.1.9.py b/course_2/part_1/part_1.1/task_1.1.9.py
+deleted file mode 100644
+--- a/course_2/part_1/part_1.1/task_1.1.9.py	(revision 3a2d5dae5a01c73ecf809a7882699f28df665d9c)
++++ /dev/null	(revision 3a2d5dae5a01c73ecf809a7882699f28df665d9c)
+@@ -1,14 +0,0 @@
+-# Реализуйте программу, которая принимает последовательность чисел и выводит их сумму.
+-# Вашей программе на вход подается последовательность строк.
+-# Первая строка содержит число n (1 ≤ n ≤ 100).
+-# В следующих n строках содержится по одному целому числу.
+-# Выведите одно число – сумму данных n чисел.
+-
+-number = int(input())
+-total = []
+-
+-for i in range(1, number + 1):
+-    digit = int(input())
+-    total.append(digit)
+-
+-print(sum(total))
+Index: course_2/part_1/part_1.3/task_1.3.9.py
+===================================================================
+diff --git a/course_2/part_1/part_1.3/task_1.3.9.py b/course_2/part_1/part_1.3/task_1.3.9.py
+deleted file mode 100644
+--- a/course_2/part_1/part_1.3/task_1.3.9.py	(revision 3a2d5dae5a01c73ecf809a7882699f28df665d9c)
++++ /dev/null	(revision 3a2d5dae5a01c73ecf809a7882699f28df665d9c)
+@@ -1,18 +0,0 @@
+-# Напишите реализацию функции closest_mod_5, принимающую в качестве единственного аргумента целое число x
+-# и возвращающую самое маленькое целое число y, такое что:
+-# y больше или равно x
+-# y делится нацело на 5
+-
+-def closest_mod_5(x):
+-    y = 5
+-    if x < y:
+-        return y
+-    elif y >= x or x % 5 == 0:
+-        return x
+-    elif 1 <= x % 5 <= 2:
+-        return x + (5 - x % 5)
+-
+-number = int(input())
+-
+-print(closest_mod_5(number))
+-
