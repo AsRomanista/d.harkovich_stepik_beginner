@@ -4,12 +4,10 @@
 # и возвращает стоимость доставки.
 
 def get_shipping_cost(quantity):
-    cost = 0
-    for i in range(1, quantity + 1):
-        if i == 1:
-            cost = 1000
-        elif i > 1:
-            cost += 120
+    if n == 1:
+        cost = 1000
+    else:
+        cost = 1000 + (n - 1) * 120
     return cost
 
 n = int(input())

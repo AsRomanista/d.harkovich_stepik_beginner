@@ -7,10 +7,8 @@ def number_to_words(num):
                    'шестнадцать', 'семнадцать', 'восемнадцать', 'девятнадцать']
     list_num_20 = ['двадцать', 'тридцать', 'сорок', 'пятьдесят', 'шестьдесят', 'семьдесят', 'восемьдесят', 'девяносто']
 
-    if num <= 10:
-        for i in str(num):
-            i = int(i)
-            result = list_num[i - 1]
+    if 1 <= num <= 10:
+        result = list_num[num - 1]
     elif 10 < num <= 19:
         for i in str(num):
             i = int(i)

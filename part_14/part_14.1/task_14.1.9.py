@@ -3,14 +3,8 @@
 # и возвращает значение True, если дата является магической и False - в противном случае.
 
 def is_magic(date):
-    date_list = date.split('.')
-    date = int(date_list[0])
-    month = int(date_list[1])
-    year = int(date_list[2][-2:])
-    if date * month == year:
-        return True
-    else:
-        return False
+    date_list = list(map(int, date.split('.')))
+    return date_list[0] * date_list[1] == date_list[2] % 100
 
 date = input()
 
