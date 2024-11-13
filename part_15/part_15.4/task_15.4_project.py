@@ -43,8 +43,7 @@ if question_lower_letter == 'y':
 if question_punctuation == 'y':
     chars += punctuation
 if question_ambiguous_symbols == 'y':
-    for i in 'il1Lo0O':
-        chars = chars.replace(i, '')
+    chars = ''.join(c for c in chars if c not in 'il1Lo0O')
 
 # Напишите функцию generate_password(), которая принимает два аргумента:
 # length: длину пароля;
@@ -53,7 +52,7 @@ if question_ambiguous_symbols == 'y':
 # Используя цикл for, сгенерируйте необходимое количество паролей.
 
 def generate_password(chars, length):
-    return random.sample(chars, length)
+    return random.choices(chars, k = length)
 
 for j in range(question_quantity_passwords):
     print(*generate_password(chars, length), sep='')
