@@ -34,23 +34,17 @@ text_without_specials, special_chars = remove_special_char(string)
 def latin_shift(text):
     text_list = text.split()
     new_string_list = []
+    alphabet_length = 26
 
     for i in text_list:
         new_string = ''
         num_shift = len(i)
 
         for j in range(num_shift):
-            if i[j].isalpha():
-                if i[j].isupper():
-                    if (ord(i[j]) + num_shift) <= ord('Z'):
-                        new_string += chr(ord(i[j]) + num_shift)
-                    else:
-                        new_string += chr(ord(i[j]) + num_shift - 26)  # 26 - quantity of latin characters
-                else:
-                    if (ord(i[j]) + num_shift) <= ord('z'):
-                        new_string += chr(ord(i[j]) + num_shift)
-                    else:
-                        new_string += chr(ord(i[j]) + num_shift - 26)  # 26 - quantity of latin characters
+            if 'A' <= i[j] <= 'Z':
+                new_string += chr((ord(i[j]) - ord('A') + num_shift) % alphabet_length + ord('A'))
+            elif 'a' <= i[j] <= 'z':
+                new_string += chr((ord(i[j]) - ord('a') + num_shift) % alphabet_length + ord('a'))
             else:
                 new_string += i[j]
 

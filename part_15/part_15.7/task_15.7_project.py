@@ -3,16 +3,14 @@
 
 import random
 
-word_list = ['Hello', 'world']
+WORD_LIST = ['Hello', 'world']
 
 # Напишите функцию get_word() которая возвращает случайное слово из списка word_list в верхнем регистре.
 
 def get_word():
-    word = random.choice(word_list)
-    return word.upper()
+    return random.choice(WORD_LIST).upper()
 
-def display_hangman(tries):
-    stages = [  # final state: head, torso, both arms, both legs
+stages = [  # final state: head, torso, both arms, both legs
                 '''
                    --------
                    |      |
@@ -83,6 +81,8 @@ def display_hangman(tries):
                    -
                 '''
     ]
+
+def display_hangman(tries):
     return stages[tries]
 
 # Напишите функцию play(), в которой будет осуществляться основная логика игры.

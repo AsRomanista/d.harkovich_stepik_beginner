@@ -4,23 +4,34 @@
 
 def encrypted_cyrillic_shift():
     num_shift = 7
-    string = 'Шсъцхр щмчжмщ йшм, нмтзж йшм лхшщзщг.'
+    text = 'Шсъцхр щмчжмщ йшм, нмтзж йшм лхшщзщг.'
     new_string = ''
+    alphabet_length = 32
 
-    for i in string:
-        if i.isalpha():
-            if i.isupper():
-                if (ord(i) - num_shift) >= ord('А'):
-                    new_string += chr(ord(i) - num_shift)
-                else:
-                    new_string += chr(ord(i) - num_shift + 32) # 32 - quantity of cyrillic characters without 'Ё'
-            else:
-                if (ord(i) - num_shift) >= ord('а'):
-                    new_string += chr(ord(i) - num_shift)
-                else:
-                    new_string += chr(ord(i) - num_shift + 32) # 32 - quantity of cyrillic characters without 'Ё'
+    # for i in text:
+    #     if i.isalpha():
+    #         if i.isupper():
+    #             if (ord(i) - num_shift) >= ord('А'):
+    #                 new_string += chr(ord(i) - num_shift)
+    #             else:
+    #                 new_string += chr(ord(i) - num_shift + 32) # 32 - quantity of cyrillic characters without 'Ё'
+    #         else:
+    #             if (ord(i) - num_shift) >= ord('а'):
+    #                 new_string += chr(ord(i) - num_shift)
+    #             else:
+    #                 new_string += chr(ord(i) - num_shift + 32) # 32 - quantity of cyrillic characters without 'Ё'
+    #     else:
+    #         new_string += i
+
+    # return new_string
+
+    for char in text:
+        if 'А' <= char <= 'Я':
+            new_string += chr((ord(char) - ord('А') - num_shift) % alphabet_length + ord('А'))
+        elif 'а' <= char <= 'я':
+            new_string += chr((ord(char) - ord('а') - num_shift) % alphabet_length + ord('а'))
         else:
-            new_string += i
+            new_string += char
 
     return new_string
 
