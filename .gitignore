@@ -1,1 +1,15 @@
 venv/
+/.idea/.gitignore
+/.idea/misc.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/vcs.xml
+/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_11_2024_22_53_[Changes]/shelved.patch
+
+/.idea/workspace.xml
+/.idea/shelf/Uncommitted_changes_before_Update_at_05_11_2024_22_50__Changes_.xml
+/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_11_2024_22_53__Changes_.xml
+/.idea/shelf/Uncommitted_changes_before_Update_at_05_11_2024_22_50_[Changes]1/shelved.patch
+/.idea/shelf/Uncommitted_changes_before_Update_at_05_11_2024_22_50_[Changes]/shelved.patch
+/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_11_2024_22_53_[Changes]1/shelved.patch
+
